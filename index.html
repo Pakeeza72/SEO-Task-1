@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>indexPage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <!-- Navbar Start -->
+  <div class="navbar-container">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bar">
+          <a class="navbar-brand mx-5" href="#" ><b style="color: white;">Feliciano</b></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stories.html">Stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <form class="form-inline mx-5">
+            <a class="nav-link text-light" href="cart.html">
+              <i class="fas fa-shopping-cart fa-lg" style="margin-left: 10px;color: burlywood;"></i>
+            </a>
+            <a class="nav-link text-light" href="book.html">
+              <i class="fas fa-user fa-lg" style="margin-left: 10px;color: burlywood;"></i>
+            </a>
+          </form>
+    </nav>
+  </div>
+        <!-- Navbar End -->
+      <!-- Carasol -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="gold-h2">Feliciano</h2>
+            <h1 class="slide-heading">Best Resturant</h1>
+            <img class="d-block w-100" src="image/slide1.png" alt="First slide" height="630px" width="100%" >
+          </div>
+          <div class="carousel-item">
+            <h2 class="gold-h2">Feliciano</h2>
+            <h1 class="slide-heading">Delicious Specialities</h1>
+            <img class="d-block w-100" src="image/slide2.png" alt="Second slide" height="630px" width="100%" >
+          </div>
+          <div class="carousel-item">
+            <h2 class="gold-h2">Feliciano</h2>
+            <h1 class="slide-heading">Nutritious & Tasty</h1>
+            <img class="d-block w-100" src="image/slide3.png" alt="Third slide" height="630px" width="100%" >
+          </div>
+          <!-- Group of cards -->
+          <div class="carousel-card-container">
+            <!-- ... (carousel card code) ... -->
+            <div class="card">
+              <img src="image/img1.png" alt="Grilled Sandwich"  >
+              <div class="card-body">
+                <h5 class="card-title" style="font-size:  40px;font-style: oblique;">Grilled Sandwich</h5>
+                <p class="card-text">Savor the deliciousness of a perfectly grilled sandwich, a harmony of flavors and textures in every bite.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="image/img2.png" alt="Grilled Sandwich" >
+              <div class="card-body">
+                <h5 class="card-title" style="font-size:  40px;font-style: oblique;">Sweet Dessert</h5>
+                <p class="card-text">Indulge in a delightful symphony of sweetness with our exquisite dessert creations.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="image/img3.png" alt="Grilled Sandwich" >
+              <div class="card-body">
+                <h5 class="card-title" style="font-size:  40px;font-style: oblique">Burger</h5>
+                <p class="card-text">Satisfy your cravings with our mouthwatering burgers, a true delight for your taste buds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Group of cards end -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- 2nd Part -->
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="image/chief1.png" class="card-img-top" alt="Chief 1">
+            </div>
+            <div class="card">
+              <img src="image/chief3.png" class="card-img-top" alt="Chief 3">
+            </div> 
+          </div>
+          <div class="col-sm-4">
+            <div class="card mt-4">
+              <img src="image/chief2.png" class="card-img-top" alt="Chief 2">
+            </div>
+          </div>
+          <div class="col-sm-4 mt-4">
+           <h2 class="merged-heading">about</h2>
+           <h1 style="font-size: 50px;">Feliciano Restaurant</h1>
+            <p>Welcome to Feliciano, a culinary haven that celebrates the art of flavor and indulgence. Founded on the belief that food is an experience to be cherished, Feliciano brings you a symphony of taste, texture, and visual delight. From our chef's masterful creations to our warm and inviting ambiance, we create moments that linger on the palate and in memory.</p>
+            <b>Mon-Fri</b>
+            <h4>08 AM - 11 PM</h4>
+            <h2 style="color: burlywood;">+1-978-123-4567</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Rating Part Start -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm">
+          <h1 style="color: burlywood;font-size: 50px;">18</h1>
+          <p>YEARS OF EXPERIENCE</p>
+        </div>
+        <div class="col-sm">
+          <h1 style="color: burlywood;font-size: 50px;">100</h1>
+          <p>Menus/Dish</p>
+        </div>
+        <div class="col-sm">
+          <h1 style="color: burlywood;font-size: 50px;">50</h1>
+          <p>Staffs</p>
+        </div>
+        <div class="col-sm">
+          <h1 style="color: burlywood;font-size: 50px;">15,000</h1>
+          <p>Happy Customer</p>
+        </div>
+        <div class="col-sm ">
+          <p>Indulge in flavors that dance on your palate and let our new restaurant be your culinary destination for unforgettable memories and delectable experiences.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Rating Part End -->  
+    <!-- Services Part Start --> 
+<div style="background-color: whitesmoke; padding-top: 10px;padding-bottom: 20px;">
+  <div class="container mt-5" >
+    <h2 class=" pt-3 " style="text-align: center;font-family: Brush Script MT, cursive;color: burlywood;font-size: 70px;">Services</h2>
+    <h1 style="font-size: 50px;font-weight: bolder;">Catering Services</h1>
+    <div class="row mt-3">
+      <div class="col-sm">
+        <div class="card border-0 text-center" style="background-color: rgba(245, 245, 245, 0);">
+          <div class="card-body">
+            <i class="fas fa-birthday-cake fa-5x"></i>
+            <h5 class="card-title mt-3" style="font-size: 40px; font-style: oblique; color: burlywood;">Birthday Party</h5>
+            <p class="card-text mt-3">Join us as we sprinkle extra joy and deliciousness into your special day at our restaurant, where every moment is a happy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card border-0 text-center" style="background-color: rgba(245, 245, 245, 0);">
+          <div class="card-body">
+            <i class="fas fa-briefcase fa-5x"></i>
+            <h5 class="card-title mt-3" style="font-size: 40px; font-style: oblique; color: burlywood;">Business Meeting</h5>
+            <p class="card-text mt-3">Elevate your business discussions to new heights with a touch of sophistication and exceptional dining at our restaurant.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card border-0 text-center" style="background-color: rgba(245, 245, 245, 0);">
+          <div class="card-body">
+            <i class="fas fa-ring fa-5x"></i>
+            <h5 class="card-title mt-3" style="font-size: 40px; font-style: oblique; color: burlywood;">Wedding Party</h5>
+            <p class="card-text mt-3">Love, laughter, and unforgettable moments intertwine as we host your wedding celebration at our enchanting restaurant.</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+<!-- Services Part End -->
+<!-- Specialities Part Start -->
+   <div class="container" >
+    <h2 style="text-align: center;font-family: Brush Script MT, cursive;color: burlywood;font-size: 70px;" >Specialities</h2>
+    <h1 style="font-size: 50px;font-weight: bolder;">Our Menu</h1>
+    <div class="row mt-5 border no-gutters">
+      <div class="col-sm">
+        <img src="image/dish1.png" class="animated-image" alt="" height="250px" width="100%">
+      </div>
+      <div class="col-sm">
+        <h5 class="card-title mt-5">Grilled Beef with potatoes</h5>
+        <p class="card-text">Meat,Potatoes,Rice,Tomatoes</p>
+        <a href="#" class="btn " style="background-color: burlywood;">Order Now</a>
+      </div>
+      <div class="col-sm">
+        <img src="image/dish2.png" class="animated-image" alt="" height="250px" width="100%">
+      </div>
+      <div class="col-sm">
+        <h5 class="card-title mt-5">Chow Mein</h5>
+        <p class="card-text">Noodles,Vegetables,Meat,Sauce</p>
+        <a href="#" class="btn " style="background-color: burlywood;">Order Now</a>
+      </div>
+    </div>
+    <div class="row border no-gutters">
+      <div class="col-sm ">
+        <h5 class="card-title mt-5">Custard</h5>
+        <p class="card-text">Milk,fruit,Sugar,Vanilla Extract</p>
+        <a href="#" class="btn " style="background-color: burlywood;">Order Now</a>
+      </div>
+      <div class="col-sm">
+        <img src="image/dish3.png" class="animated-image" alt="" height="250px" width="100%">
+      </div>
+      <div class="col-sm">
+        <h5 class="card-title mt-5">Chicken Wings</h5>
+        <p class="card-text">Chicken,Cream,Sauce,Vinger</p>
+        <a href="#" class="btn " style="background-color: burlywood;">Order Now</a>
+      </div>
+      <div class="col-sm">
+        <img src="image/dish4.png" class="animated-image" alt="" height="250px" width="100%">
+      </div>
+    </div>
+    <div class="row mb-5 border no-gutters">
+      <div class="col-sm">
+        <img src="image/dish5.png" class="animated-image" alt="" height="250px" width="100%">
+      </div>
+      <div class="col-sm">
+        <h5 class="card-title mt-5">Classic Ingredient Omelette</h5>
+        <p class="card-text">Eggs, Tomatoes, Chilli, Salt</p>
+        <a href="#" class="btn " style="background-color: burlywood;">Order Now</a>
+      </div>
+      <div class="col-sm">
+        <img src="image/dish6.png" class="animated-image" alt="" height="250px" width="100%">
+      </div>
+      <div class="col-sm">
+        <h5 class="card-title mt-5">Simple Cream Delight</h5>
+        <p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>
+        <a href="#" class="btn " style="background-color: burlywood;">Order Now</a>
+      </div>
+    </div>
+  </div>   
+  </div>  
+  <!-- Specialities Part End -->
+  <!-- Chef Part Start -->
+  <div class="container mt-5 mb-5">
+    <h2 style="text-align: center;font-family: Brush Script MT, cursive;color: burlywood;font-size: 70px;" >Chef</h2>
+    <h1 style="font-size: 50px;font-weight: bolder;">Our Master Chef</h1>
+    <div class="row mt-5">
+      <!-- 1st card -->
+      <div class="col-sm">
+        <div class="card border-0">
+          <img class="card-img-top" src="image/cap1.png" alt="Card image cap" width="20rem" height="250px">
+          <div class="card-body" style="text-align: left;">
+            <h5 class="card-title" >John Smooth</h5>
+            <p class="card-text text-muted ">Restaurant Owner</p>
+            <p class="card-text social-icons">
+              <i class="fab fa-twitter" style="color: burlywood;"></i>
+              <i class="fab fa-instagram" style="color: burlywood;"></i>
+              <i class="fab fa-google-plus " style="color: burlywood;"></i>
+              <i class="fab fa-facebook" style="color: burlywood;"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd card -->
+      <div class="col-sm">
+        <div class="card border-0">
+          <img class="card-img-top" src="image/cap2.png" alt="Card image cap" width="20rem" height="250px" >
+          <div class="card-body" style="text-align: left;">
+            <h5 class="card-title">Rebeca Welson</h5>
+            <p class="card-text text-muted">Head Chef</p>
+            <p class="card-text social-icons">
+              <i class="fab fa-twitter" style="color: burlywood;"></i>
+              <i class="fab fa-instagram" style="color: burlywood;"></i>
+              <i class="fab fa-google-plus " style="color: burlywood;"></i>
+              <i class="fab fa-facebook" style="color: burlywood;"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd card -->
+      <div class="col-sm">
+        <div class="card border-0">
+          <img class="card-img-top" src="image/cap3.png" alt="Card image cap" width="20rem" height="250px" >
+          <div class="card-body" style="text-align: left;">
+            <h5 class="card-title">Kharl Branyt</h5>
+            <p class="card-text text-muted">Chef</p>
+            <p class="card-text social-icons">
+              <i class="fab fa-twitter" style="color: burlywood;"></i>
+              <i class="fab fa-instagram" style="color: burlywood;"></i>
+              <i class="fab fa-google-plus " style="color: burlywood;"></i>
+              <i class="fab fa-facebook" style="color: burlywood;"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 4th Card -->
+      <div class="col-sm">
+        <div class="card border-0">
+          <img class="card-img-top" src="image/cap4.png" alt="Card image cap" width="20rem" height="250px" >
+          <div class="card-body" style="text-align: left;">
+            <h5 class="card-title">Luke Simon</h5>
+            <p class="card-text text-muted">Chef</p>
+            <p class="card-text social-icons">
+              <i class="fab fa-twitter" style="color: burlywood;"></i>
+              <i class="fab fa-instagram" style="color: burlywood;"></i>
+              <i class="fab fa-google-plus " style="color: burlywood;"></i>
+              <i class="fab fa-facebook" style="color: burlywood;"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Background Image Part -->
+<div style="background-image: url('image/background1.png');padding-top: 20px;">  
+<div class="container text-left">
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="card mb-5 mt-5" style="width: 100%;">
+        <h2 style="text-align: center;font-family: Lucida Handwriting, cursive;color: burlywood;font-size: 70px;margin-bottom: -45px;margin-top: 10px;" >Book a Table</h2>
+        <h1 style="font-size: 55px;font-weight: bolder;text-align: center;">Make Reservation</h1>
+        <div class="card-body">
+        <form>  
+          <div class="form-row ">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4"><h3>Name</h3></label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4"><h3>Email</h3></label>
+              <input type="email" class="form-control" id="inputPassword4" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-row ">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4"><h3>Phone</h3></label>
+              <input type="tel" class="form-control" id="inputEmail4" placeholder="Phone">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4"><h3>Date</h3></label>
+              <input type="date" class="form-control" id="inputPassword4" placeholder="Date">
+            </div>
+          </div>
+          <div class="form-row ">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4"><h3>Time</h3></label>
+              <input type="time" class="form-control" id="inputEmail4" placeholder="Time">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4"><h3>Persons</h3></label>
+              <input type="number" class="form-control" id="inputPassword4" placeholder="Persons">
+            </div>
+          </div>
+          <div class="text-center mb-5">
+            <button type="submit" class="btn btn-primary btn-lg px-5 mt-4 border-0" style="background-color: burlywood;">Make a Reservation</button>
+          </div>        
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm"></div>
+  </div>
+</div><!-- Container -->
+</div>    <!-- this div is for picture -->
+<!-- Happy Customer Start -->
+<div class="container swiper mySwiper p-5"  >
+  <h2 style="text-align: center;font-family: Lucida Handwriting, cursive;color: burlywood;font-size: 60px;margin-bottom: -45px;margin-top: 10px;" >Testimony</h2>
+  <h1 style="font-size: 50px;font-weight: bolder;">Happy Customer</h1>
+  <div class="swiper-wrapper" >
+    <div class="swiper-slide" >
+      <div class="card border-0 position-relative">
+        <div class="card-img" style="background-image: url('image/person1.png');background-position: center;background-repeat: no-repeat;background-size: cover;height: 150px;width: 150px;border-radius: 50%;margin-left: 100px;">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">I absolutely loved the delightful desserts at your restaurant!A perfect treat for any sweet tooth!</p>
+          <h6 class="card-title" style="font-size:  40px;font-style: oblique;">Emily</h6>
+          <b style="font-size: 20px;">Customer</b>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" >
+      <div class="card border-0">
+        <div class="card-img" style="background-image: url('image/person2.png');background-position: center;background-repeat: no-repeat;background-size: cover;height: 150px;width: 150px;border-radius: 50%;margin-left: 100px;">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">The dining experience at your restaurant was beyond amazing. The ambiance was charming, and impeccable.</p>
+          <h6 class="card-title" style="font-size:  40px;font-style: oblique;">Ava</h6>
+          <b style="font-size: 20px;">Customer</b>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" >
+      <div class="card border-0">
+        <div class="card-img" style="background-image: url('image/person3.png');background-position: center;background-repeat: no-repeat;background-size: cover;height: 150px;width: 150px;border-radius: 50%;margin-left: 100px;">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">I'm so impressed with the variety and quality of vegetarian options you offer. Each dish was bursting.</p>
+          <h6 class="card-title" style="font-size:  40px;font-style: oblique;">Sophia</h6>
+          <b style="font-size: 20px;">Customer</b>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" >
+      <div class="card border-0">
+        <div class="card-img" style="background-image: url('image/person4.png');background-position: center;background-repeat: no-repeat;background-size: cover;height: 150px;width: 150px;border-radius: 50%;margin-left: 100px;">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Your restaurant's attention to detail is remarkable. From the beautifully plated dishes to the warm.</p>
+          <h6 class="card-title" style="font-size:  40px;font-style: oblique;">Mia</h6>
+          <b style="font-size: 20px;">Customer</b>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" >
+      <div class="card border-0">
+        <div class="card-img" style="background-image: url('image/person5.png');background-position: center;background-repeat: no-repeat;background-size: cover;height: 150px;width: 150px;border-radius: 50%;margin-left: 100px;">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">I had the pleasure of tasting your signature dessert, and it was a taste sensation like no other. </p>
+          <h6 class="card-title" style="font-size:  40px;font-style: oblique;">Olivia</h6>
+          <b style="font-size: 20px;">Customer</b>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" >
+      <div class="card border-0">
+        <div class="card-img" style="background-image: url('image/person6.png');background-position: center;background-repeat: no-repeat;background-size: cover;height: 150px;width: 150px;border-radius: 50%;margin-left: 100px;">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">"My friends and I had an unforgettable experience at your restaurant.Truly a gem in the culinary scene.</p>
+          <h6 class="card-title" style="font-size:  40px;font-style: oblique;">Isabella</h6>
+          <b style="font-size: 20px;">Customer</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination " ></div>
+</div>
+<!-- Happy Customer End -->
+<!-- Blogs Part Start -->
+<div style="background-color: whitesmoke;padding-top: 7px;padding-bottom: 15px;margin-top: 10px;">           <!-- div for background color -->
+<div class="container mt-5">
+  <h2 style="text-align: center;font-family: Lucida Handwriting, cursive;color: burlywood;font-size: 60px;margin-bottom: -45px;margin-top: 10px;" >Blog</h2>
+  <h1 style="font-size: 50px;font-weight: bolder;">Rescent Posts</h1>
+  <div class="row mt-5 mb-5">
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="image/blog1.png" alt="Card image cap" height="280px" width="100%">
+        <div class="card-body">
+          <p class="card-text text-left"><small class="text-muted">Sep.6,2020 Admin</small></p>
+          <h5 class="card-title text-left">Taste the Delicious food in UAE</h5>
+          <p class="card-text text-left d-flex justify-content-between">Read More <small class="text-muted"><i class="fa fa-comment ml-5"></i>3</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm ">
+      <div class="card">
+        <img class="card-img-top" src="image/blog2.png" alt="Card image cap" height="280px" width="100%">
+        <div class="card-body">
+          <p class="card-text text-left"><small class="text-muted">Dec.16,2021 Admin</small></p>
+          <h5 class="card-title text-left">Indulge in UAE's Parisian Flavors</h5>
+          <p class="card-text text-left d-flex justify-content-between">Read More <small class="text-muted"><i class="fa fa-comment ml-5"></i>3</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+        <img class="card-img-top" src="image/blog3.png" alt="Card image cap" height="280px" width="100%">
+        <div class="card-body">
+          <p class="card-text text-left"><small class="text-muted">Jan.8,2022 Admin</small></p>
+          <h5 class="card-title text-left">UAE's Exquisite Culinary Delights.</h5>
+          <p class="card-text text-left d-flex justify-content-between">Read More <small class="text-muted"><i class="fa fa-comment ml-5"></i>3</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>           <!-- div for background color -->
+<!-- Blogs Part End -->
+<!-- Ending Part Start -->
+ <div style="background-color: black;padding-top: 20px;">    <!-- div for background color -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card border-0 mb-3" style="background-color: rgba(245, 245, 245, 0);color: white;">
+        <div class="card-header border-0 text-left"><h3>Feliciano</h3></div>
+        <div class="card-body">
+          <p class="card-title text-left text-muted">Indulge in flavors that dance on your palate and let our new restaurant be your culinary destination for unforgettable memories and delectable experiences.</p>
+        </div>
+        <div class="card-footer border-0">
+          <p class="card-text social-icons">
+            <a href="https://twitter.com/your_twitter_username" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
+            </a>
+            <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
+            </a>
+            <a href="https://www.facebook.com/your_facebook_username" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
+        <div class="card-header border-0 text-left"><h3>Open Hours</h3></div>
+        <div class="card-body">
+          <p class="card-text text-muted  d-flex justify-content-between">Monday<small class="text-muted">9:00-24:00</small></p>
+          <p class="card-text text-muted  d-flex justify-content-between">Tuesday<small class="text-muted">9:00-24:00</small></p>
+          <p class="card-text text-muted  d-flex justify-content-between">Wednesday<small class="text-muted">9:00-24:00</small></p>
+          <p class="card-text text-muted  d-flex justify-content-between">Thursday<small class="text-muted">9:00-24:00</small></p>
+          <p class="card-text text-muted  d-flex justify-content-between">Friday<small class="text-muted">9:00-2:00</small></p>
+          <p class="card-text text-muted  d-flex justify-content-between">Saturday<small class="text-muted">9:00-2:00</small></p>
+          <p class="card-text text-muted  d-flex justify-content-between">Sunday<small class="text-muted">9:00-2:00</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
+        <div class="card-header border-0 text-left"><h3>Instagram</h3></div>
+        <div class="card-body">
+          <img src="image/bottom.png" alt="" height="257px" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
+        <div class="card-header border-0 text-left"><h3>Newsletter</h3></div>
+        <div class="card-body">
+          <p class="card-text text-muted">Far far away, behind the words, mountains, far from the countries </p>
+          <form>
+            <input type="email" placeholder="Enter email address" class="form-control">
+            <button class="btn btn-block border-0 mt-3" style="background-color: burlywood;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>     <!-- div for background color -->
+<!-- Finish -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+      },
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+
+
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

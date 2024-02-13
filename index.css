@@ -1,0 +1,244 @@
+
+.navbar-nav .nav-item.active .nav-link {
+  position: relative;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.navbar-nav .nav-item.active .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 5px; /* Adjust this value to position the underline */
+  left: 0;
+  width: 100%;
+  height: 5px; /* Height of the underline */
+  background-color: burlywood;
+}
+
+/* For background */
+/* Scrolled navbar styles */
+.navbar-scrolled {
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav link styles */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+/* Scrolled nav link styles */
+.navbar-scrolled .navbar-nav .nav-link {
+  color: blue;
+}
+/* Carousel */
+.carousel-inner {
+    position: relative;
+  }
+
+  .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+
+  }
+  /* For Cards Start */
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the slide-up animation to cards */
+  .card , h1 , h2, h3,h4 {
+    animation: slide-up 1s ease-out forwards;
+  }
+/* For Cards End */
+
+/* For Images Start */
+/* Define the slide-up animation */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the slide-up animation to the image */
+.animated-image {
+  animation: slide-up 1s ease-out forwards;
+}
+
+/* For Images End */
+
+  .carousel-card-container {
+    display: flex;
+    margin: 20px;
+    height: 100%;
+  }
+
+  .carousel-card-container .card {
+    align-items: center;
+    margin: 20px;
+    height: 300px;
+    background-color: rgba(245, 245, 245, 0);
+    color: white;
+    border: none;
+    margin-top: 250px;
+    font-size: larger;
+    opacity: 0;
+   transform: translateY(50px);
+   animation: slideInCards 1s ease-in-out forwards;
+  }
+
+  @keyframes slideInCards {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .carousel-card-container .card img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+  }
+  /* Part One Animation */
+  /* Define the animation */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to your heading and paragraph */
+.merged-heading,
+p {
+  animation: slide-up 1s ease-out forwards;
+}
+  /* Styling for the big stylish heading */
+  .slide-heading {
+    color: #ffffff;
+    text-shadow: 4px 4px 20px goldenrod;
+    text-align: center;
+    top:170px ;
+  }
+  
+  .gold-h2 {
+    font-family: "Lucida Handwriting", cursive;
+    color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    top: 130px;
+    text-align: center;
+  }
+   
+  .slide-heading,
+.gold-h2 {
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  left: 20%;
+  bottom: 0; /* Starting position at the bottom */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: moveUpAnimation 1s ease-in-out forwards; /* Animation name and settings */
+}
+
+/* Animation for moving up */
+@keyframes moveUpAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  /* about cards */
+  .card-img-top {
+    max-width: 100%;
+  }
+  h1, h4, h2 {
+    color: #333;
+  }
+  b {
+    color: darkgray;
+    font-size: 30px;
+  }
+  .merged-heading {
+    font-size: 40px;
+    position: absolute;
+    top: -32px;
+    left: 24%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 60px;
+    color: burlywood;
+    z-index: 3;
+  }
+  
+  /* Added styles for center alignment */
+  .container {
+    text-align: center;
+  }
+/* Chef Part Start */
+.social-icons {
+  display: flex; 
+  justify-content: left; 
+  margin-top: 5px;
+  gap: 4px; 
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: burlywood; /* Set the default color to gray */
+}
+.swiper-pagination-bullets .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  background-color: purple; /* Set the color for inactive bullets to brown */
+}
+
+
+.quote-icon {
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 100px;
+  background-color: burlywood;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
