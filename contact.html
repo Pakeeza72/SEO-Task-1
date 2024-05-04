@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>contactPage</title>
+    <title>Reserve a Table</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
     <div class="navbar-container">
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg navbar-dark bar">
-        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">Feliciano</b></a>
+        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">SweetSpiceFusion</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,7 +50,7 @@
         <a class="nav-link text-light" href="cart.html">
           <i class="fas fa-shopping-cart fa-lg" style="margin-left: 10px;color: burlywood;"></i>
         </a>
-        <a class="nav-link text-light" href="book.html">
+        <a class="nav-link text-light" href="login.html">
           <i class="fas fa-user fa-lg" style="margin-left: 10px;color: burlywood;"></i>
         </a>
       </form>
@@ -66,7 +66,7 @@
     </div>
     <!-- Front part of every page end -->
     <!-- Background Image Part -->
-<div style="padding-top: 20px;background-color: whitesmoke;">  
+<div style="padding-top: 20px;background-color: rgba(222, 184, 135, 0.439);">  
   <div class="container text-left">
     <div class="row">
       <div class="col-sm">
@@ -74,43 +74,43 @@
           <h2 style="text-align: center; font-family: 'Lucida Handwriting', cursive; color: burlywood; font-size: 55px; margin-top: 20px;">Book a Table</h2>
           <h1 style="font-size: 45px; font-weight: bold; text-align: center;">Make Reservation</h1>
           <div class="card-body">
-            <form>  
-              <div class="form-row">
-                <div class="form-group col-sm-6">
-                  <label for="name" style="font-size: 1.5rem;">Name</label>
-                  <input type="text" class="form-control rounded-pill" id="name" placeholder="Your Name">
-                </div>
-                <div class="form-group col-sm-6">
-                  <label for="email" style="font-size: 1.5rem;">Email</label>
-                  <input type="email" class="form-control rounded-pill" id="email" placeholder="Your Email">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-sm-6">
-                  <label for="phone" style="font-size: 1.5rem;">Phone</label>
-                  <input type="tel" class="form-control rounded-pill" id="phone" placeholder="Your Phone">
-                </div>
-                <div class="form-group col-sm-6">
-                  <label for="date" style="font-size: 1.5rem;">Date</label>
-                  <input type="date" class="form-control rounded-pill" id="date">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-sm-6">
-                  <label for="time" style="font-size: 1.5rem;">Time</label>
-                  <input type="time" class="form-control rounded-pill" id="time">
-                </div>
-                <div class="form-group col-sm-6">
-                  <label for="persons" style="font-size: 1.5rem;">Number of Persons</label>
-                  <input type="number" class="form-control rounded-pill" id="persons" placeholder="Number of Persons">
-                </div>
-              </div>
-              <div class="text-center mt-4">
-                <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5" style="background-color: burlywood; font-size: 1.5rem;">Make a Reservation</button>
-              </div>        
-            </form>
+              <form id="reservationForm">  
+                  <div class="form-row">
+                      <div class="form-group col-sm-6">
+                          <label for="name" style="font-size: 1.5rem;">Name</label>
+                          <input type="text" class="form-control rounded-pill" id="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="form-group col-sm-6">
+                          <label for="email" style="font-size: 1.5rem;">Email</label>
+                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Your Email" required>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-sm-6">
+                          <label for="phone" style="font-size: 1.5rem;">Phone</label>
+                          <input type="tel" class="form-control rounded-pill" id="phone" placeholder="Your Phone" required>
+                      </div>
+                      <div class="form-group col-sm-6">
+                          <label for="date" style="font-size: 1.5rem;">Date</label>
+                          <input type="date" class="form-control rounded-pill" id="date" required>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-sm-6">
+                          <label for="time" style="font-size: 1.5rem;">Time</label>
+                          <input type="time" class="form-control rounded-pill" id="time" required>
+                      </div>
+                      <div class="form-group col-sm-6">
+                          <label for="persons" style="font-size: 1.5rem;">Number of Persons</label>
+                          <input type="number" class="form-control rounded-pill" id="persons" placeholder="Number of Persons" required>
+                      </div>
+                  </div>
+                  <div class="text-center mt-4">
+                      <button type="submit" class="btn btn-lg rounded-pill px-5" style="background-color: burlywood; font-size: 1.5rem;">Make a Reservation</button>
+                  </div>        
+              </form>
           </div>
-        </div>
+      </div>
         
       </div>
       <div class="col-sm mt-5 mb-5">
@@ -127,7 +127,7 @@
   </div>    <!-- this div is for picture -->
   <!-- Background Image End -->
   <!-- Contact Information Start -->
-  <div style="background-color: white;">
+  <div style="background-color: rgba(202, 183, 155, 0.469);;">
     <div class="container p-5">
       <div class="row">
         <div class="col-sm text-left">
@@ -139,16 +139,16 @@
       </div>
       <div class="row">
         <div class="col-sm text-left">
-          <p>Address:198 West 21th Street,Suite 721 New York NY 10016</p>
+          <p>Hope Road Loco Shed , Lahore</p>
         </div>
         <div class="col-sm">
-          <p>Phone: <a href="tel:+1235235598" style="color: burlywood;">+1235 2355 98</a></p>
+          <p>Phone: <a href="tel:+1235235598" style="color: burlywood;">+92 300 4731189</a></p>
         </div>
         <div class="col-sm">
-          <p>Email: <a href="mailto:info@yoursite.com" style="color: burlywood;">info@yoursite.com</a></p>
+          <p>Email: <a href="mailto:info@yoursite.com" style="color: burlywood;">batoolpakeeza72@gmail.com</a></p>
         </div>
         <div class="col-sm">
-          <p>Website: <a href="" style="color: burlywood;">yoursite.com</a></p>
+          <p>Website: <a href="" style="color: burlywood;">sweetspicefusion.me</a></p>
         </div>
       </div>
     </div>
@@ -231,6 +231,43 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script>
+      $(document).ready(function() {
+    $('#reservationForm').submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get values of form fields
+        var name = $('#name').val().trim();
+        var email = $('#email').val().trim();
+        var phone = $('#phone').val().trim();
+        var date = $('#date').val().trim();
+        var time = $('#time').val().trim();
+        var persons = $('#persons').val().trim();
+
+        // Check if any field is empty
+        if (name === '' || email === '' || phone === '' || date === '' || time === '' || persons === '') {
+            alert('Please fill in all fields.');
+        } else {
+            // Check if email is in valid format
+            if (!isValidEmail(email)) {
+                alert('Please enter a valid email address.');
+            } else {
+                // If all conditions are satisfied, show success message
+                alert('Congratulations! Your table has been booked.');
+                window.location.href = 'index.html';
+            }
+        }
+    });
+
+    // Function to validate email format
+    function isValidEmail(email) {
+        var emailRegex = /\S+@\S+\.\S+/;
+        return emailRegex.test(email);
+    }
+});
+
+  </script>
 
 
     <!-- Optional JavaScript -->

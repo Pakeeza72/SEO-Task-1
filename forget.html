@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>bookPage</title>
+    <title>forgetPage</title>
     <!-- Required meta tags -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -86,7 +86,7 @@
     <div class="navbar-container">
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg navbar-dark bar">
-        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">Feliciano</b></a>
+        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">SweetSpiceFusion</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -113,7 +113,7 @@
           <a class="nav-link text-light" href="cart.html">
             <i class="fas fa-shopping-cart fa-lg" style="margin-left: 10px;color: burlywood;"></i>
           </a>
-          <a class="nav-link text-light" href="book.html">
+          <a class="nav-link text-light" href="login.html">
             <i class="fas fa-user fa-lg" style="margin-left: 10px;color: burlywood;"></i>
           </a>
         </form>
@@ -136,23 +136,26 @@
           <div class="col-sm-3"></div>
           <div class="col-sm">
             <div class="card mt-5 mb-5 " id="c1" style="box-shadow: 4px 2px 2px wheat;">
-                <div class="card-header" id="c2" style="border-radius: 5px;">
+              <div class="card-header" id="c2" style="border-radius: 5px;">
                   <h5>Forget Password</h5>
-                </div>
-                <div class="form-container text-center">
+              </div>
+              <div class="form-container text-center">
                   <div class="form-inner">
-                    <form action="#" class="login"> 
-                      <div class="field">
-                        <input type="text" placeholder="Email Address" required>
-                      </div>
-                      <div class="field">
-                        <input type="password" placeholder="Set New Password" required>
-                      </div>
-                      <button class="btn-block p-2 border-0 mt-2" style="background-color: burlywood;border-radius: 50px;"><a href="index.php" style="text-decoration: none;color: black;">Update</a></button>
-                    </form>
+                      <form id="forgetPasswordForm"> 
+                          <div class="field">
+                              <input id="email" type="email" class="form-control" placeholder="Email Address" required>
+                          </div>
+                          <div class="field">
+                              <input id="newPassword" type="password" class="form-control" placeholder="New Password" required>
+                          </div>
+                          <div class="field">
+                              <input id="confirmPassword" type="password" class="form-control" placeholder="Confirm New Password" required>
+                          </div>
+                          <button type="submit" class="btn btn-block mt-2" style="border-radius: 50px;background-color: burlywood;">Update</button>
+                      </form>
                   </div>
-                </div>
-            </div> 
+              </div>
+          </div>
           </div>
           <div class="col-sm-3"></div>      
         </div>
@@ -240,25 +243,41 @@
 
 
 
-    <script>
-      function initMap() {
-        // Define the center and initial zoom level
-        const mapCenter = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
-        const mapOptions = {
-          zoom: 12,
-          center: mapCenter,
-        };
+      <script>
+        $(document).ready(function() {
+            $('#forgetPasswordForm').submit(function(event) {
+                event.preventDefault(); // Prevent default form submission
     
-        // Create the map
-        const map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                // Get values of email, new password, and confirm password fields
+                var email = $('#email').val().trim();
+                var newPassword = $('#newPassword').val().trim();
+                var confirmPassword = $('#confirmPassword').val().trim();
     
-        // Add markers, overlays, and other map features here
-      }
-//For Form
- 
+                // Check if email, new password, and confirm password are not empty
+                if (email === '' || newPassword === '' || confirmPassword === '') {
+                    alert('Please fill in all fields.');
+                } else if (newPassword !== confirmPassword) { // Check if new password and confirm password match
+                    alert('New password and confirm password must match.');
+                } else {
+                    // Check if email is in valid format
+                    if (!isValidEmail(email)) {
+                        alert('Please enter a valid email address.');
+                    } else {
+                        // If all conditions are satisfied, show success message and redirect
+                        alert('Your password has been updated.');
+                        window.location.href = 'login.html';
+                    }
+                }
+            });
+    
+            // Function to validate email format
+            function isValidEmail(email) {
+                var emailRegex = /\S+@\S+\.\S+/;
+                return emailRegex.test(email);
+            }
+        });
     </script>
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

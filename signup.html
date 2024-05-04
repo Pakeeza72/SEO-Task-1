@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>bookPage</title>
+    <title>SignUp</title>
     <!-- Required meta tags -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -86,7 +86,7 @@
     <div class="navbar-container">
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg navbar-dark bar">
-        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">Feliciano</b></a>
+        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">SweetSpiceFusion</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -113,7 +113,7 @@
           <a class="nav-link text-light" href="cart.html">
             <i class="fas fa-shopping-cart fa-lg" style="margin-left: 10px;color: burlywood;"></i>
           </a>
-          <a class="nav-link text-light" href="book.html">
+          <a class="nav-link text-light" href="login.html">
             <i class="fas fa-user fa-lg" style="margin-left: 10px;color: burlywood;"></i>
           </a>
         </form>
@@ -136,29 +136,29 @@
           <div class="col-sm-3"></div>
           <div class="col-sm">
             <div class="card mt-5 mb-5 " id="c1" style="box-shadow: 4px 2px 2px wheat;">
-                <div class="card-header" id="c2" style="border-radius: 5px;">
+              <div class="card-header" id="c2" style="border-radius: 5px;">
                   <h5>SignUp Form</h5>
-                </div>
-                <div class="form-container text-center">
+              </div>
+              <div class="form-container text-center">
                   <div class="form-inner">
-                    <form action="#" class="login">
-                      <div class="field">
-                        <input type="text" placeholder="Your Name" required>
-                      </div>  
-                      <div class="field">
-                        <input type="text" placeholder="Email Address" required>
-                      </div>
-                      <div class="field">
-                        <input type="tel" placeholder="Phone Number" required>
-                      </div>
-                      <div class="field">
-                        <input type="password" placeholder="Password" required>
-                      </div>
-                      <button class="btn-block p-2 border-0 mt-2" style="background-color: burlywood;border-radius: 50px;"><a href="index.php" style="text-decoration: none;color: black;">SignUp</a></button>
-                    </form>
+                      <form id="signupForm">  
+                          <div class="field">
+                              <input id="name" type="text" class="form-control" placeholder="Your Name" required>
+                          </div>
+                          <div class="field">
+                              <input id="email" type="email" class="form-control" placeholder="Email Address" required>
+                          </div>
+                          <div class="field">
+                              <input id="phone" type="tel" class="form-control" placeholder="Phone Number" required>
+                          </div>
+                          <div class="field">
+                              <input id="password" type="password" class="form-control" placeholder="Password" required>
+                          </div>
+                          <button type="submit" class="btn btn-block mt-2" style="border-radius: 50px;background-color: burlywood;">SignUp</button>
+                      </form>
                   </div>
-                </div>
-            </div> 
+              </div>
+          </div>
           </div>
           <div class="col-sm-3"></div>      
         </div>
@@ -246,29 +246,47 @@
 
 
 
-    <script>
-      function initMap() {
-        // Define the center and initial zoom level
-        const mapCenter = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
-        const mapOptions = {
-          zoom: 12,
-          center: mapCenter,
-        };
+      <script>
+        $(document).ready(function() {
+            $('#signupForm').submit(function(event) {
+                event.preventDefault(); // Prevent default form submission
     
-        // Create the map
-        const map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                // Get values of name, email, phone, and password fields
+                var name = $('#name').val().trim();
+                var email = $('#email').val().trim();
+                var phone = $('#phone').val().trim();
+                var password = $('#password').val().trim();
     
-        // Add markers, overlays, and other map features here
-      }
-//For Form
- 
+                // Check if any field is empty
+                if (name === '' || email === '' || phone === '' || password === '') {
+                    alert('Please fill in all fields.');
+                } else {
+                    // Check if email is in valid format
+                    if (!isValidEmail(email)) {
+                        alert('Please enter a valid email address.');
+                    } else if (!isValidPhoneNumber(phone)) { // Check if phone number is in valid format
+                        alert('Please enter a valid phone number.');
+                    } else {
+                        // If all conditions are satisfied, show success message and redirect
+                        alert('You have signed up successfully.');
+                        window.location.href = 'index.html';
+                    }
+                }
+            });
+    
+            // Function to validate email format
+            function isValidEmail(email) {
+                var emailRegex = /\S+@\S+\.\S+/;
+                return emailRegex.test(email);
+            }
+    
+            // Function to validate phone number format (simple check)
+            function isValidPhoneNumber(phone) {
+                var phoneRegex = /^\d{11}$/; // Assuming phone number is 10 digits
+                return phoneRegex.test(phone);
+            }
+        });
     </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

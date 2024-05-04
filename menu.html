@@ -1,127 +1,158 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>menuPage</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
+<html lang="en" dir="ltr">
 
-/* Define the default background color for the headings */
-.col-sm h5 {
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-  position: relative; /* Ensure proper positioning for the pseudo-element */
-}
+<head>
+  <title>menuPage</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    /* Define the default background color for the headings */
+    .col-sm h5 {
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+      position: relative;
+      /* Ensure proper positioning for the pseudo-element */
+    }
 
-/* Apply the .bubble4 styles to the "Breakfast" heading */
-.bubble4::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 13px solid transparent;
-  border-top-color: burlywood;
-  border-bottom: 0;
-  margin-left: -13px;
-  margin-bottom: -13px;
-  visibility: hidden;
-}
+    /* Apply the .bubble4 styles to the "Breakfast" heading */
+    .bubble4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 13px solid transparent;
+      border-top-color: burlywood;
+      border-bottom: 0;
+      margin-left: -13px;
+      margin-bottom: -13px;
+      visibility: hidden;
+    }
 
-/* Change the background color to brown when hovering */
-.bubble4:hover {
-  background-color: burlywood;
-  padding: 10px;
-}
+    /* Change the background color to brown when hovering */
+    .bubble4:hover {
+      background-color: burlywood;
+      padding: 10px;
+    }
 
-/* Show the bubble after hovering */
-.bubble4:hover::after {
-  visibility: visible;
-}
+    /* Show the bubble after hovering */
+    .bubble4:hover::after {
+      visibility: visible;
+    }
 
-.clickable-heading {
-  cursor: pointer;
-}
+    .clickable-heading {
+      cursor: pointer;
+    }
 
-.menu-item-card {
-  position: relative;
-}
+    .menu-item-card {
+      position: relative;
+    }
 
-.price-tag {
-  position: absolute;
-  bottom: -80px;
-  right: 10px;
-  background-color: green;
-  padding: 5px 10px;
-  border-radius: 50px;
-  color: white;
-}
-
-
-    </style>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="index.css">
-    <!-- Link Swiper's CSS -->
+    .price-tag {
+      position: absolute;
+      bottom: -80px;
+      right: 10px;
+      background-color: green;
+      padding: 5px 10px;
+      border-radius: 50px;
+      color: white;
+    }
+  </style>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="index.css">
+  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <!-- For Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="navbar-container">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg navbar-dark bar">
-        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">Feliciano</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link " href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="stories.html">Stories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <form class="form-inline mx-5">
-          <a class="nav-link text-light" href="cart.html">
-            <i class="fas fa-shopping-cart fa-lg" style="margin-left: 10px;color: burlywood;"></i>
-          </a>
-          <a class="nav-link text-light" href="book.html">
-            <i class="fas fa-user fa-lg" style="margin-left: 10px;color: burlywood;"></i>
-          </a>
-        </form>
-  </nav>
-</div>
-      <!-- Navbar End -->
-      <!-- Front part of every page start -->
-    <div id="a2">
-        <h1 style="text-align: center;margin-top: 170px;font-size: 60px;font-weight: bolder;color: white;filter: brightness(7px);">Specialities</h1>
-        <div style="display: flex; align-items: center;color: white;">
-            <a href="index.html" style="text-decoration: none;"><p style="color: white;">HOME></p></a>
-            <i><p>&nbsp;&nbsp;Menu></p></i>
+  <!-- For Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="navbar-container">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bar">
+      <a class="navbar-brand mx-5" href="#"><b style="color: white;">SweetSpiceFusion</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stories.html">Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <form class="form-inline mx-5">
+        <a class="nav-link text-light" href="cart.html">
+          <i class="fas fa-shopping-cart fa-lg" style="margin-left: 10px;color: burlywood;"></i>
+        </a>
+        <a class="nav-link text-light" href="login.html">
+          <i class="fas fa-user fa-lg" style="margin-left: 10px;color: burlywood;"></i>
+        </a>
+      </form>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+  <!-- Front part of every page start -->
+  <div id="a2">
+    <h1
+      style="text-align: center;margin-top: 170px;font-size: 60px;font-weight: bolder;color: white;filter: brightness(7px);">
+      Specialities</h1>
+    <div style="display: flex; align-items: center;color: white;">
+      <a href="index.html" style="text-decoration: none;">
+        <p style="color: white;">HOME></p>
+      </a>
+      <i>
+        <p>&nbsp;&nbsp;Menu></p>
+      </i>
     </div>
-    </div>
-    <!-- Front part of every page end -->
-    <!-- Specialities Part Start -->
-   <div class="container" >
+  </div>
+  <!-- Front part of every page end -->
+  <!-- Specialities Part Start -->
+  <div class="container">
     <div class="row mt-5">
       <div class="col-sm clickable-heading" data-target="breakfast">
         <h5 class="bubble4">BreakFast</h5>
+        <!-- <div id="textContainer" style="display:none;">
+          <p>
+            Indulge in a morning masterpiece with our Golden Glow Breakfast, a delightful fusion of flavors that awaken
+            your taste buds and energize your day. Crafted with care, each bite promises a symphony of wholesome
+            ingredients expertly combined for a breakfast experience like no other.
+            <br><br>
+            Start your day right with our signature brown bread, freshly toasted to perfection, offering a satisfying
+            crunch with every bite. Paired harmoniously with ripe tomatoes, bursting with juicy goodness, and a
+            perfectly cooked half-fried egg, adding a rich, velvety texture to the ensemble.
+            <br><br>
+            Enhance your breakfast bliss with our selection of delectable sauces, meticulously chosen to complement and
+            elevate the flavors of each component. Whether you prefer a hint of tangy tomato ketchup or a dash of zesty
+            hot sauce, we have just the accompaniment to suit your palate.
+            <br><br>
+            Not only does our Golden Glow Breakfast tantalize your taste buds, but it also packs a nutritional punch,
+            providing essential nutrients to fuel your day. With protein-packed eggs, fiber-rich brown bread, and the
+            goodness of fresh tomatoes, you can indulge guilt-free, knowing you're nourishing your body with every bite.
+            <br><br>
+            Experience the golden moments of breakfast bliss with our Golden Glow Breakfast, a culinary delight that
+            promises to brighten your mornings and leave you craving for more. Dive into a symphony of flavors, and let
+            the golden glow of satisfaction illuminate your day.
+          </p>
+        </div> -->
       </div>
       <div class="col-sm clickable-heading" data-target="lunch">
         <h5 class="bubble4">Lunch</h5>
@@ -141,526 +172,1353 @@
     </div>
     <div class="mt-5 mb-5 menu-table-row">
     </div>
-   </div>
- 
+  </div>
+
   <!-- Specialities Part End -->
   <!-- Ending Part Start -->
- <div style="background-color: black;padding-top: 20px;">    <!-- div for background color -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card border-0 mb-3" style="background-color: rgba(245, 245, 245, 0);color: white;">
-          <div class="card-header border-0 text-left"><h3>Feliciano</h3></div>
-          <div class="card-body">
-            <p class="card-title text-left text-muted">Indulge in flavors that dance on your palate and let our new restaurant be your culinary destination for unforgettable memories and delectable experiences.</p>
-          </div>
-          <div class="card-footer border-0">
-            <p class="card-text social-icons">
-              <a href="https://twitter.com/your_twitter_username" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-twitter p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
-              </a>
-              <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
-              </a>
-              <a href="https://www.facebook.com/your_facebook_username" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-facebook-f p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
-          <div class="card-header border-0 text-left"><h3>Open Hours</h3></div>
-          <div class="card-body">
-            <p class="card-text text-muted  d-flex justify-content-between">Monday<small class="text-muted">9:00-24:00</small></p>
-            <p class="card-text text-muted  d-flex justify-content-between">Tuesday<small class="text-muted">9:00-24:00</small></p>
-            <p class="card-text text-muted  d-flex justify-content-between">Wednesday<small class="text-muted">9:00-24:00</small></p>
-            <p class="card-text text-muted  d-flex justify-content-between">Thursday<small class="text-muted">9:00-24:00</small></p>
-            <p class="card-text text-muted  d-flex justify-content-between">Friday<small class="text-muted">9:00-2:00</small></p>
-            <p class="card-text text-muted  d-flex justify-content-between">Saturday<small class="text-muted">9:00-2:00</small></p>
-            <p class="card-text text-muted  d-flex justify-content-between">Sunday<small class="text-muted">9:00-2:00</small></p>
+  <div style="background-color: black;padding-top: 20px;"> <!-- div for background color -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card border-0 mb-3" style="background-color: rgba(245, 245, 245, 0);color: white;">
+            <div class="card-header border-0 text-left">
+              <h3>Feliciano</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-title text-left text-muted">Indulge in flavors that dance on your palate and let our new
+                restaurant be your culinary destination for unforgettable memories and delectable experiences.</p>
+            </div>
+            <div class="card-footer border-0">
+              <p class="card-text social-icons">
+                <a href="https://twitter.com/your_twitter_username" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-twitter p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
+                </a>
+                <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-instagram p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
+                </a>
+                <a href="https://www.facebook.com/your_facebook_username" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-facebook-f p-2" style="color: white;background-color: black;border-radius: 50%;"></i>
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm">
-        <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
-          <div class="card-header border-0 text-left"><h3>Instagram</h3></div>
-          <div class="card-body">
-            <img src="image/bottom.png" alt="" height="257px" width="100%">
+        <div class="col-sm">
+          <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
+            <div class="card-header border-0 text-left">
+              <h3>Open Hours</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-muted  d-flex justify-content-between">Monday<small
+                  class="text-muted">9:00-24:00</small></p>
+              <p class="card-text text-muted  d-flex justify-content-between">Tuesday<small
+                  class="text-muted">9:00-24:00</small></p>
+              <p class="card-text text-muted  d-flex justify-content-between">Wednesday<small
+                  class="text-muted">9:00-24:00</small></p>
+              <p class="card-text text-muted  d-flex justify-content-between">Thursday<small
+                  class="text-muted">9:00-24:00</small></p>
+              <p class="card-text text-muted  d-flex justify-content-between">Friday<small
+                  class="text-muted">9:00-2:00</small></p>
+              <p class="card-text text-muted  d-flex justify-content-between">Saturday<small
+                  class="text-muted">9:00-2:00</small></p>
+              <p class="card-text text-muted  d-flex justify-content-between">Sunday<small
+                  class="text-muted">9:00-2:00</small></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm">
-        <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
-          <div class="card-header border-0 text-left"><h3>Newsletter</h3></div>
-          <div class="card-body">
-            <p class="card-text text-muted">Far far away, behind the words, mountains, far from the countries </p>
-            <form>
-              <input type="email" placeholder="Enter email address" class="form-control">
-              <button class="btn btn-block border-0 mt-3" style="background-color: burlywood;">Subscribe</button>
-            </form>
+        <div class="col-sm">
+          <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
+            <div class="card-header border-0 text-left">
+              <h3>Instagram</h3>
+            </div>
+            <div class="card-body">
+              <img src="image/bottom.png" alt="" height="257px" width="100%">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card border-0 mb-3" style=" background-color: rgba(245, 245, 245, 0);color: white;">
+            <div class="card-header border-0 text-left">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-muted">Far far away, behind the words, mountains, far from the countries </p>
+              <form>
+                <input type="email" placeholder="Enter email address" class="form-control">
+                <button class="btn btn-block border-0 mt-3" style="background-color: burlywood;">Subscribe</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
- </div>     <!-- div for background color -->
+  </div> <!-- div for background color -->
   <!-- Finish -->
 
 
-   <script>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
       const clickableHeadings = document.querySelectorAll('.clickable-heading');
       const menuRows = {
-      breakfast: [
-    '<div class="row mt-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/br1.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Grilled Beef with potatoes</h5>',
-        '<p class="card-text">Meat,Potatoes,Rice,Tomatoes</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/br2.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chow Mein</h5>',
-        '<p class="card-text">Noodles,Vegetables,Meat,Sauce</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-    '<div class="row border no-gutters">',
-      '<div class="col-sm ">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Custard</h5>',
-        '<p class="card-text">Milk,fruit,Sugar,Vanilla Extract</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/br3.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chicken Wings</h5>',
-        '<p class="card-text">Chicken,Cream,Sauce,Vinger</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/br4.png" alt="" height="250px" width="100%">',
-      '</div>',
-    '</div>',
-    '<div class="row mb-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/br5.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Classic Ingredient Omelette</h5>',
-        '<p class="card-text">Eggs, Tomatoes, Chilli, Salt</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/br6.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Simple Cream Delight</h5>',
-        '<p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-      ],
-      lunch: [
-    '<div class="row mt-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/lu1.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Grilled Beef with potatoes</h5>',
-        '<p class="card-text">Meat,Potatoes,Rice,Tomatoes</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/lu2.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chow Mein</h5>',
-        '<p class="card-text">Noodles,Vegetables,Meat,Sauce</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-    '<div class="row border no-gutters">',
-      '<div class="col-sm ">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Custard</h5>',
-        '<p class="card-text">Milk,fruit,Sugar,Vanilla Extract</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/lu3.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chicken Wings</h5>',
-        '<p class="card-text">Chicken,Cream,Sauce,Vinger</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/lu4.png" alt="" height="250px" width="100%">',
-      '</div>',
-    '</div>',
-    '<div class="row mb-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/lu5.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Classic Ingredient Omelette</h5>',
-        '<p class="card-text">Eggs, Tomatoes, Chilli, Salt</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/lu6.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Simple Cream Delight</h5>',
-        '<p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-      ],
-      dinner:[
-    '<div class="row mt-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/di1.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Grilled Beef with potatoes</h5>',
-        '<p class="card-text">Meat,Potatoes,Rice,Tomatoes</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/di2.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chow Mein</h5>',
-        '<p class="card-text">Noodles,Vegetables,Meat,Sauce</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-    '<div class="row border no-gutters">',
-      '<div class="col-sm ">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Custard</h5>',
-        '<p class="card-text">Milk,fruit,Sugar,Vanilla Extract</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/di3.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chicken Wings</h5>',
-        '<p class="card-text">Chicken,Cream,Sauce,Vinger</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/di4.png" alt="" height="250px" width="100%">',
-      '</div>',
-    '</div>',
-    '<div class="row mb-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/di5.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Classic Ingredient Omelette</h5>',
-        '<p class="card-text">Eggs, Tomatoes, Chilli, Salt</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/di6.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Simple Cream Delight</h5>',
-        '<p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-      ],
-      drinks: [
-    '<div class="row mt-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/drink1.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Grilled Beef with potatoes</h5>',
-        '<p class="card-text">Meat,Potatoes,Rice,Tomatoes</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/drink2.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chow Mein</h5>',
-        '<p class="card-text">Noodles,Vegetables,Meat,Sauce</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-    '<div class="row border no-gutters">',
-      '<div class="col-sm ">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Custard</h5>',
-        '<p class="card-text">Milk,fruit,Sugar,Vanilla Extract</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/drink3.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chicken Wings</h5>',
-        '<p class="card-text">Chicken,Cream,Sauce,Vinger</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/drink4.png" alt="" height="250px" width="100%">',
-      '</div>',
-    '</div>',
-    '<div class="row mb-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/drink5.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Classic Ingredient Omelette</h5>',
-        '<p class="card-text">Eggs, Tomatoes, Chilli, Salt</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/drink6.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Simple Cream Delight</h5>',
-        '<p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-      ],
-      desserts: [
-    '<div class="row mt-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/de1.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Grilled Beef with potatoes</h5>',
-        '<p class="card-text">Meat,Potatoes,Rice,Tomatoes</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/de2.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chow Mein</h5>',
-        '<p class="card-text">Noodles,Vegetables,Meat,Sauce</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-    '<div class="row border no-gutters">',
-      '<div class="col-sm ">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Custard</h5>',
-        '<p class="card-text">Milk,fruit,Sugar,Vanilla Extract</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/de3.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chicken Wings</h5>',
-        '<p class="card-text">Chicken,Cream,Sauce,Vinger</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/de4.png" alt="" height="250px" width="100%">',
-      '</div>',
-    '</div>',
-    '<div class="row mb-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/de5.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Classic Ingredient Omelette</h5>',
-        '<p class="card-text">Eggs, Tomatoes, Chilli, Salt</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/de6.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Simple Cream Delight</h5>',
-        '<p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-      ],
-      wine: [
-    '<div class="row mt-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/w1.gif" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Grilled Beef with potatoes</h5>',
-        '<p class="card-text">Meat,Potatoes,Rice,Tomatoes</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/w2.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chow Mein</h5>',
-        '<p class="card-text">Noodles,Vegetables,Meat,Sauce</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-    '<div class="row border no-gutters">',
-      '<div class="col-sm ">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Custard</h5>',
-        '<p class="card-text">Milk,fruit,Sugar,Vanilla Extract</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/w3.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Chicken Wings</h5>',
-        '<p class="card-text">Chicken,Cream,Sauce,Vinger</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/w4.png" alt="" height="250px" width="100%">',
-      '</div>',
-    '</div>',
-    '<div class="row mb-5 border no-gutters">',
-      '<div class="col-sm">',
-        '<img src="image/w5.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Classic Ingredient Omelette</h5>',
-        '<p class="card-text">Eggs, Tomatoes, Chilli, Salt</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-      '<div class="col-sm">',
-        '<img src="image/w6.png" alt="" height="250px" width="100%">',
-      '</div>',
-      '<div class="col-sm">',
-        '<div class="menu-item-card">',
-        '<h5 class="card-title mt-5">Simple Cream Delight</h5>',
-        '<p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>',
-        '<a href="#" class="btn " style="background-color: burlywood;">Order Now</a>',
-        '<div class="price-tag">$12.99</div>',
-        '</div>',
-      '</div>',
-    '</div>',
-      ],
-      // ... Define content for other menus ...
-    };
-  
-    clickableHeadings.forEach((heading) => {
+        breakfast: [
+          '<div class="row mt-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/br1.png" alt="" height="250px" width="100%">',
+          '<div id="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Indulge in a morning masterpiece with our Golden Glow Breakfast, a delightful fusion of flavors that awaken your taste buds and energize your day. Crafted with care, each bite promises a symphony of wholesome ingredients expertly combined for a breakfast experience like no other.',
+          '<br><br>',
+          'Start your day right with our signature brown bread, freshly toasted to perfection, offering a satisfying crunch with every bite. Paired harmoniously with ripe tomatoes, bursting with juicy goodness, and a perfectly cooked half-fried egg, adding a rich, velvety texture to the ensemble.',
+          '<br><br>',
+          'Enhance your breakfast bliss with our selection of delectable sauces, meticulously chosen to complement and elevate the flavors of each component. Whether you prefer a hint of tangy tomato ketchup or a dash of zesty hot sauce, we have just the accompaniment to suit your palate.',
+          '<br><br>',
+          'Not only does our Golden Glow Breakfast tantalize your taste buds, but it also packs a nutritional punch, providing essential nutrients to fuel your day. With protein-packed eggs, fiber-rich brown bread, and the goodness of fresh tomatoes, you can indulge guilt-free, knowing you are nourishing your body with every bite.',
+          '<br><br>',
+          'Experience the golden moments of breakfast bliss with our Golden Glow Breakfast, a culinary delight that promises to brighten your mornings and leave you craving for more. Dive into a symphony of flavors, and let the golden glow of satisfaction illuminate your day.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Golden Glow Breakfast</h5>',
+          '<p class="card-text">Brown Bread,Tomatoes and Fried Egg</p>',
+          '<a href="cart.html?name=Golden Glow Breakfast&price=250&description=Brown Bread,Tomatoes,Half Fried Egg with some sauces&image=image/br1.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-250</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/br2.png" alt="" height="250px" width="100%">',
+          '<div id="overlay2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay2()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Indulge in a fruity fiesta with our Berry Bonanza Custard, a delightful concoction that blends the freshness of seasonal fruits with the creaminess of luscious custard, topped with a sprinkling of crunchy nuts. Each spoonful is a symphony of flavors, promising a burst of sweetness and a tantalizing crunch in every bite.',
+          '<br><br>',
+          'Savor the vibrant medley of seasonal fruits, carefully selected at the peak of ripeness to ensure maximum flavor and freshness. From succulent berries to juicy slices of tropical goodness, our Berry Bonanza Custard is a celebration of natures bounty, offering a delightful fusion of colors and tastes.',
+          '<br><br>',
+          'Complementing the fruity extravaganza is our velvety custard, crafted with precision to achieve the perfect balance of creaminess and lightness. Made with the finest ingredients, our custard envelops each fruit with a silky smoothness, creating a decadent indulgence that is simply irresistible.',
+          '<br><br>',
+          'To add a delightful crunch to every spoonful, we top our Berry Bonanza Custard with a generous sprinkling of nuts. From crunchy almonds to buttery cashews, each nut brings a unique texture and flavor, elevating the sensory experience to new heights.',
+          '<br><br>',
+          'Whether enjoyed as a refreshing dessert or a satisfying snack, our Berry Bonanza Custard is a true delight for the senses. With its irresistible combination of seasonal fruits, creamy custard, and crunchy nuts, its the perfect treat to satisfy your cravings and brighten your day. Treat yourself to a taste of paradise with our Berry Bonanza Custard, and let every bite transport you to fruity bliss.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay2()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Berry Bonanza Custard</h5>',
+          '<p class="card-text">Season Fruits,Custard with nuts</p>',
+          '<a href="cart.html?name=Berry Bonanza Custard&price=400&description=Season Fruits,Custard with nuts&image=image/br2.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-400</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row border no-gutters">',
+          '<div class="col-sm ">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Luxe Butter Toss</h5>',
+          '<p class="card-text">Brown Bread & Butter</p>',
+          '<a href="cart.html?name=Luxe Butter Toss&price=150&description=Brown Bread & Butter&image=image/br3.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-150</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/br3.png" alt="" height="250px" width="100%">',
+          '<div id="overlay3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay3()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Elevate your dining experience with our Luxe Butter Toss, a delectable indulgence featuring the simplicity of brown bread elevated to gourmet heights with the richness of luxurious butter. Each bite is a symphony of flavor and texture, promising a tantalizing journey for your taste buds.',
+          '<br><br>',
+          'Crafted with the finest ingredients, our Luxe Butter Toss starts with a foundation of wholesome brown bread, renowned for its nutty flavor and hearty texture. Baked to perfection, each slice offers a satisfying crunch that serves as the perfect canvas for our indulgent creation.',
+          '<br><br>',
+          'At the heart of our Luxe Butter Toss lies the star ingredient - luxurious butter. Made from the highest quality cream, churned to perfection, our butter exudes a rich, creamy flavor that melts seamlessly into the warm embrace of the brown bread. With every bite, youll experience a velvety smoothness that lingers on the palate, leaving you craving for more.',
+          '<br><br>',
+          'Whether enjoyed as a standalone delight or paired with your favorite accompaniments, our Luxe Butter Toss is a true celebration of simplicity and sophistication. Indulge in the pure pleasure of rich butter and hearty brown bread, and let the exquisite flavors transport you to a realm of culinary bliss.',
+          '<br><br>',
+          'Treat yourself to a taste of luxury with our Luxe Butter Toss, and experience the unparalleled decadence of gourmet dining in every bite. With its irresistible combination of premium ingredients and exquisite craftsmanship, its a culinary masterpiece thats sure to delight even the most discerning palate.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay3()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Creamy Harvest Slice</h5>',
+          '<p class="card-text">Brown Bread,Cream,Seasonal Fruits</p>',
+          '<a href="cart.html?name=Creamy Harvest Slice&price=250&description=Brown Bread,Cream,Seasonal Fruits&image=image/br4.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-250</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/br4.png" alt="" height="250px" width="100%">',
+          '<div id="overlay4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay4()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Savor the essence of the harvest season with our Creamy Harvest Slice, a tantalizing creation that combines the wholesome goodness of brown bread, the richness of cream, and the vibrant flavors of seasonal fruits. Each bite is a celebration of natures bounty, promising a symphony of taste and texture that delights the senses.',
+          '<br><br>',
+          'At the heart of our Creamy Harvest Slice lies the foundation of hearty brown bread, renowned for its nutty flavor and satisfying crunch. Baked to perfection, each slice serves as the perfect base for our indulgent creation, offering a rustic charm that sets the stage for culinary delight.',
+          '<br><br>',
+          'Layered atop the brown bread is a luscious spread of creamy goodness, made from the finest cream and expertly whipped to velvety perfection. With its rich, luxurious texture, our cream adds a decadent touch to every bite, enveloping the palate in a blanket of smoothness that indulges the senses.',
+          '<br><br>',
+          'Completing this culinary masterpiece are the seasonal fruits, carefully selected at the peak of ripeness to ensure maximum flavor and freshness. From succulent berries to juicy slices of tropical sweetness, each fruit adds a burst of color and taste to the ensemble, creating a harmonious medley of flavors that dance on the tongue.',
+          '<br><br>',
+          'Whether enjoyed as a delightful dessert or a satisfying snack, our Creamy Harvest Slice is a true testament to the beauty of simplicity and the abundance of nature. Indulge in the creamy richness, savor the sweetness of seasonal fruits, and let every bite transport you to a realm of pure culinary bliss.',
+          '<br><br>',
+          'Treat yourself to the flavors of the harvest with our Creamy Harvest Slice, and experience the magic of the season in every decadent bite. With its irresistible combination of wholesome ingredients and indulgent flavors, its a slice of paradise thats sure to leave you craving for more.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay4()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row mb-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/br5.png" alt="" height="250px" width="100%">',
+          '<div id="overlay5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay5()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Immerse yourself in a symphony of freshness with our Flavorful Salad Splash, a vibrant medley of all-season vegetables bursting with color, crunch, and flavor. Crafted with care, each bite promises a refreshing splash of goodness that invigorates the senses and nourishes the body.',
+          '<br><br>',
+          'At the heart of our Flavorful Salad Splash are the all-season vegetables, handpicked for their crispness and vitality. From crisp lettuce to crunchy cucumbers, vibrant bell peppers to juicy tomatoes, our salad celebrates the diversity of natures bounty, offering a rainbow of flavors and textures in every bowl.',
+          '<br><br>',
+          'Enhancing the natural goodness of the vegetables is our signature dressing, a tantalizing blend of herbs, spices, and seasonings that elevate the taste experience to new heights. Made with the finest ingredients, our dressing adds a burst of flavor to every bite, transforming ordinary vegetables into an extraordinary culinary delight.',
+          '<br><br>',
+          'Whether enjoyed as a refreshing appetizer or a satisfying meal, our Flavorful Salad Splash is a true celebration of freshness and flavor. Packed with vitamins, minerals, and antioxidants, its a wholesome choice that nourishes the body and delights the palate.',
+          '<br><br>',
+          'Treat yourself to the vibrant flavors of our Flavorful Salad Splash, and experience the joy of healthy eating in every mouthful. With its irresistible combination of all-season vegetables and zesty dressing, its the perfect way to indulge your senses and embrace the goodness of nature.Dive into a bowl of freshness today and let the flavors of our salad splash awaken your taste buds and revitalize your spirit.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay5()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Flavorful Salad Splash</h5>',
+          '<p class="card-text">All seasons vegetables & Sauces</p>',
+          '<a href="cart.html?name=Flavorful Salad Splash&price=198&description=All seasons vegetables & Sauces&image=image/br5.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-198</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/br6.png" alt="" height="250px" width="100%">',
+          '<div id="overlay6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay6()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Discover the perfect harmony of flavors with our Morning Harmony Trio, a delightful ensemble featuring the timeless trio of tea, jam, and round bread or bun. Crafted with care and attention to detail, each component of this morning ritual promises to elevate your breakfast experience to new heights, starting your day on a harmonious note.',
+          '<br><br>',
+          'Begin your morning journey with a steaming cup of fragrant tea, selected from the finest blends to awaken your senses and invigorate your spirit. Whether you prefer the robust flavor of black tea or the delicate notes of green tea, our carefully curated selection offers something to delight every palate.',
+          '<br><br>',
+          'Complementing your tea is our exquisite jam, made from the juiciest fruits and simmered to perfection to capture their natural sweetness. From tangy raspberry to luscious apricot, each spoonful of our jam bursts with flavor, adding a touch of indulgence to your morning routine.',
+          '<br><br>',
+          'Complete the trio with our freshly baked round bread or bun, lovingly crafted to achieve the perfect balance of softness and texture. Baked to golden perfection, each bite offers a satisfying crunch on the outside and a pillowy softness on the inside, providing the ideal canvas for spreading your favorite jam or enjoying with a sip of tea.',
+          '<br><br>',
+          ',Whether enjoyed as a leisurely breakfast or a quick pick-me-up, our Morning Harmony Trio is a symphony of flavors that promises to brighten your day and set the tone for a harmonious morning. Embrace the ritual of tea, jam, and round bread or bun, and let the gentle melodies of flavor and aroma soothe your soul and uplift your spirit.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay6()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Morning Harmony Trio</h5>',
+          '<p class="card-text">Tea, Jam & Round Bread or Bun</p>',
+          '<a href="cart.html?name=Morning Harmony Trio&price=110&description=Tea, Jam & Round Bread or Bun&image=image/br6.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-110</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+        ],
+        lunch: [
+          '<div class="row mt-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/lu1.png" alt="" height="250px" width="100%">',
+          '<div id="overlay7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay7()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Embark on a culinary journey with our Veggie Rice Platter, a tantalizing feast that celebrates the vibrant flavors and colors of nearly 8 vegetable dishes served alongside fragrant rice. Each platter is a symphony of tastes and textures, promising a wholesome and satisfying dining experience that delights vegetarians and veggie enthusiasts alike.',
+          '<br><br>',
+          'At the heart of our Veggie Rice Platter is a generous serving of fluffy, aromatic rice, cooked to perfection to provide the ideal foundation for the array of vegetable delights that await. Whether you prefer long-grain Basmati or the nutty goodness of brown rice, our rice serves as the perfect canvas for the diverse flavors that follow.',
+          '<br><br>',
+          'Accompanying the rice are nearly 8 vegetable dishes, each meticulously prepared to showcase the natural goodness of seasonal produce. From crunchy stir-fried vegetables to hearty curries and vibrant salads, our platter offers a kaleidoscope of tastes and textures that tantalize the palate and nourish the body.',
+          '<br><br>',
+          'Indulge in the earthy sweetness of roasted root vegetables, the subtle heat of spicy stir-fries, and the refreshing crunch of crisp salads, all served together in perfect harmony on a single platter. With nearly 8 vegetable dishes to choose from, every bite offers a new adventure for your taste buds, ensuring a dining experience that is as exciting as it is satisfying.',
+          '<br><br>',
+          'Whether enjoyed as a hearty meal for one or shared among friends and family, our Veggie Rice Platter is a true celebration of vegetarian cuisine. Packed with flavor, nutrition, and culinary creativity, its the perfect choice for anyone looking to embrace the abundance of natures bounty in every delicious bite.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay7()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Veggie Rice Platter</h5>',
+          '<p class="card-text">Rice with almost 8 vegetable dishes</p>',
+          '<a href="cart.html?name=Veggie Rice Platter&price=250&description=Rice with almost 8 vegetable dishes&image=image/lu1.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-250</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/lu2.png" alt="" height="250px" width="100%">',
+          '<div id="overlay8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay8()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Experience the comforting simplicity of our Common Lunch, a wholesome meal featuring freshly prepared chappati, cooked vegetables, and a crisp salad. Rooted in tradition and crafted with care, each element of this lunchtime favorite promises to satisfy your hunger and nourish your body.',
+          '<br><br>',
+          'At the heart of our Common Lunch is the chappati, a staple of Indian cuisine known for its soft texture and subtle flavor. Made from whole wheat flour and expertly cooked to perfection, our chappati provides the perfect base for savoring the delicious flavors that follow.',
+          '<br><br>',
+          'Accompanying the chappati are a selection of cooked vegetables, lovingly prepared to bring out their natural sweetness and vibrancy. From tender potatoes to crisp green beans, each vegetable dish is bursting with flavor, offering a satisfying balance of nutrition and taste.',
+          '<br><br>',
+          'To complement the hearty flavors of the chappati and vegetables, our Common Lunch includes a refreshing salad, made from a medley of crisp greens, juicy tomatoes, and crunchy cucumbers. Tossed in a light dressing and garnished with fresh herbs, our salad adds a burst of freshness to every bite, creating a harmonious balance of flavors and textures.',
+          '<br><br>',
+          'Whether enjoyed as a quick and satisfying midday meal or shared among friends and family, our Common Lunch is a true celebration of everyday goodness. With its nourishing ingredients, comforting flavors, and satisfying simplicity, its the perfect choice for anyone looking to enjoy a delicious and nutritious meal that feels like home.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay8()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Common Lunch</h5>',
+          '<p class="card-text">Chappati & cooked Vegetable with salad</p>',
+          '<a href="cart.html?name=Common Lunch&price=130&description=Chappati & cooked Vegetable with salad&image=image/lu2.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-130</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row border no-gutters">',
+          '<div class="col-sm ">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Chapati Kabab Rolls</h5>',
+          '<p class="card-text">Chapati & Kabab with Salad</p>',
+          '<a href="cart.html?name=Chapati Kabab Rolls&price=300&description=Chapati & Kabab with Salad&image=image/lu3.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-300</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/lu3.png" alt="" height="250px" width="100%">',
+          '<div id="overlay9" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay9()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Delight your taste buds with our Chapati Kabab Rolls, a flavorful fusion of tender kababs, freshly made chapatis, and crisp salad, all rolled into a convenient and satisfying package. Each bite is a symphony of taste and texture, promising a culinary experience that is both hearty and satisfying.',
+          '<br><br>',
+          'At the heart of our Chapati Kabab Rolls are the succulent kababs, expertly crafted from the finest ingredients and infused with aromatic spices. Whether you prefer the smoky richness of grilled meats or the savory goodness of vegetarian options, our kababs are sure to tantalize your palate and leave you craving for more.',
+          '<br><br>',
+          'Serving as the perfect vessel for our delicious kababs is our freshly made chapatis, lovingly prepared to achieve the perfect balance of softness and elasticity. Rolled to perfection, our chapatis provide a warm and comforting base for the flavorful kababs, ensuring every bite is a delight to the senses.',
+          '<br><br>',
+          'Accompanying our Chapati Kabab Rolls is a crisp and refreshing salad, made from a colorful array of crunchy vegetables and tossed in a light dressing. Bursting with freshness and flavor, our salad adds a delightful contrast to the rich and savory kababs, creating a harmonious balance that satisfies both the palate and the appetite.',
+          '<br><br>',
+          'Whether enjoyed as a quick and satisfying meal on the go or savored as a hearty dinner option, our Chapati Kabab Rolls are a true delight for food lovers everywhere. With their bold flavors, satisfying textures, and convenient format, theyre the perfect choice for anyone looking to indulge in a delicious and satisfying culinary experience.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay9()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Chicken Delight Shawarma</h5>',
+          '<p class="card-text">Good Stuffing of Chicken & Salad</p>',
+          '<a href="cart.html?name=Chicken Delight Shawarma&price=300&description=Good Stuffing of Chicken, Salad & Sauces&image=image/lu4.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-300</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/lu4.png" alt="" height="250px" width="100%">',
+          '<div id="overlay10" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay10()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Indulge in a taste of the Mediterranean with our Chicken Delight Shawarma, a tantalizing blend of succulent chicken, flavorful stuffing, and crisp salad, all wrapped in a warm and fluffy pita. Each bite is a culinary journey, promising a symphony of flavors and textures that will transport your taste buds to exotic lands.',
+          '<br><br>',
+          'At the heart of our Chicken Delight Shawarma is the star ingredient - tender strips of marinated chicken, grilled to perfection to lock in their natural juiciness and imbue them with a smoky, savory flavor. Served hot and fresh, our chicken is the epitome of indulgence, offering a satisfying burst of flavor with every bite.',
+          '<br><br>',
+          'Complementing the chicken is a delectable stuffing, made from a savory blend of spices, herbs, and other secret ingredients. Bursting with flavor and texture, our stuffing adds a tantalizing depth to the shawarma, elevating it from a simple sandwich to a gourmet delight that will leave you craving for more.',
+          '<br><br>',
+          'Serving as the perfect vessel for our delicious chicken and stuffing is our warm and fluffy pita bread, freshly baked to golden perfection. Soft yet sturdy, our pita provides the ideal canvas for wrapping up the flavorful fillings, ensuring that each bite is a perfect balance of tastes and textures.',
+          '<br><br>',
+          'Completing this culinary masterpiece is a crisp and refreshing salad, made from a colorful assortment of crunchy vegetables and tossed in a light dressing. With its vibrant flavors and fresh ingredients, our salad adds a delightful contrast to the savory richness of the chicken shawarma, creating a harmonious balance that will tantalize your taste buds and leave you craving for more.',
+          '<br><br>',
+          'Whether enjoyed as a quick and satisfying meal on the go or savored as a hearty dinner option, our Chicken Delight Shawarma is a true delight for food lovers everywhere. With its bold flavors, satisfying textures, and exotic appeal, its the perfect choice for anyone looking to indulge in a delicious and satisfying culinary experience.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay10()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row mb-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/lu5.png" alt="" height="250px" width="100%">',
+          '<div id="overlay11" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay11()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Satisfy your cravings with our tantalizing Chicken and Egg Sandwich, a mouthwatering creation packed with juicy chicken, fluffy eggs, fresh tomatoes, zesty chili, and a sprinkle of salt, all nestled between two slices of soft bread. Each bite is a burst of flavor and texture, promising a delightful culinary experience that will leave you craving for more.',
+          '<br><br>',
+          'At the heart of our Chicken and Egg Sandwich is the succulent chicken, grilled to perfection and seasoned with aromatic spices to bring out its natural flavors. Combined with fluffy scrambled eggs, cooked to a velvety smoothness, our sandwich offers a protein-packed punch that will keep you energized throughout the day.',
+          '<br><br>',
+          'Enhancing the savory goodness of the chicken and eggs are the fresh tomatoes, sliced to perfection to add a burst of juiciness and a hint of sweetness to every bite. For those who crave a bit of heat, we add zesty chili for a spicy kick that will awaken your taste buds and leave you craving for more.',
+          '<br><br>',
+          'To balance the flavors, we sprinkle a touch of salt, enhancing the natural taste of the ingredients and creating a harmonious blend of savory and tangy notes. All sandwiched between two slices of soft bread, toasted to golden perfection, our Chicken and Egg Sandwich is a true delight for food lovers everywhere.',
+          '<br><br>',
+          'Whether enjoyed as a quick and satisfying lunch option or savored as a hearty snack, our Chicken and Egg Sandwich is the perfect choice for anyone looking to indulge in a delicious and satisfying meal. With its bold flavors, satisfying textures, and wholesome ingredients, its a culinary experience that will leave you craving for more.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay11()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Sandwich</h5>',
+          '<p class="card-text">Chicken,Eggs, Tomatoes, Chilli, Salt</p>',
+          '<a href="cart.html?name=Sandwich&price=270&description=Chicken,Eggs, Tomatoes, Chilli, Salt&image=image/lu5.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-270</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/lu6.png" alt="" height="250px" width="100%">',
+          '<div id="overlay12" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay12()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Simple Cream Delight, a luscious treat that combines the richness of heavy cream with the simplicity of milk, a hint of sweetness from sugar, and the velvety smoothness of eggs. This decadent dessert promises to tantalize your taste buds and leave you craving for more with its creamy texture and delicate flavor.',
+          '<br><br>',
+          'At the heart of our Simple Cream Delight is a luxurious blend of heavy cream and milk, carefully combined to achieve the perfect balance of richness and lightness. Sourced from the finest ingredients, our cream and milk impart a silky smoothness to every spoonful, enveloping your palate in a blanket of indulgence.',
+          '<br><br>',
+          'Enhancing the creamy goodness is a touch of sweetness from sugar, added to the mixture to elevate the flavor profile and add a subtle hint of sweetness. Whether you prefer a hint of sweetness or a more decadent taste, our Simple Cream Delight can be tailored to suit your preferences, ensuring a truly personalized culinary experience.',
+          '<br><br>',
+          'To achieve the perfect texture, we incorporate eggs into our Simple Cream Delight, whisked to a smooth consistency and gently folded into the cream mixture. The eggs lend a velvety richness to the dessert, creating a luxurious mouthfeel that melts in your mouth with every bite.',
+          '<br><br>',
+          'Whether enjoyed as a standalone dessert or paired with your favorite accompaniments, our Simple Cream Delight is a true indulgence for the senses. With its creamy texture, delicate flavor, and luxurious ingredients, its the perfect choice for anyone looking to treat themselves to a moment of pure culinary bliss.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay12()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Simple Cream Delight</h5>',
+          '<p class="card-text">Milk,Heavy Cream, Sugar Eggs</p>',
+          '<a href="cart.html?name=Simple Cream Delight&price=390&description=Milk,Heavy Cream, Sugar Eggs&image=image/lu6.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-390</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+        ],
+        dinner: [
+          '<div class="row mt-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/di1.png" alt="" height="250px" width="100%">',
+          '<div id="overlay13" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay13()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Perfectly Balanced Rice Bowl, a harmonious fusion of fluffy rice, crisp salad, and flavorful sauces, meticulously crafted to tantalize your taste buds and nourish your body. Each bowl is a symphony of textures and tastes, promising a satisfying culinary experience that leaves you feeling energized and satisfied.',
+          '<br><br>',
+          'At the heart of our Perfectly Balanced Rice Bowl is a generous serving of fluffy, fragrant rice, cooked to perfection to achieve the ideal balance of softness and firmness. Sourced from the finest grains, our rice provides the perfect foundation for building a wholesome and satisfying meal.',
+          '<br><br>',
+          'Accompanying the rice is a vibrant salad, made from a colorful assortment of crisp vegetables and leafy greens, tossed in a light and refreshing dressing. Bursting with freshness and flavor, our salad adds a delightful crunch and a burst of nutrients to every bite, ensuring a wholesome and satisfying dining experience.',
+          '<br><br>',
+          'Completing the ensemble are our flavorful sauces, carefully selected to complement the natural goodness of the rice and salad. Whether you prefer a tangy tomato salsa, a creamy avocado dressing, or a zesty lemon vinaigrette, our selection of sauces offers something to suit every palate, adding a burst of flavor and excitement to every bowl.',
+          '<br><br>',
+          'Whether enjoyed as a quick and satisfying lunch option or savored as a hearty dinner choice, our Perfectly Balanced Rice Bowl is the perfect choice for anyone looking to indulge in a delicious and nutritious meal. With its satisfying textures, vibrant flavors, and wholesome ingredients, its a culinary creation that promises to leave you feeling nourished, satisfied, and ready to take on whatever the day may bring.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay13()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Perfectly Balanced Rice Bowl</h5>',
+          '<p class="card-text">Rice, Salad & Sauces</p>',
+          '<a href="cart.html?name=Perfectly Balanced Rice Bowl&price=160&description=Rice, Salad & Sauces&image=image/di1.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-160</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/di2.png" alt="" height="250px" width="100%">',
+          '<div id="overlay14" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay14()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our mouthwatering Chow Mein, a classic Chinese dish brimming with savory noodles, crisp vegetables, tender meat, and a tantalizing sauce. Each bite is a culinary adventure, offering a symphony of flavors and textures that will transport you to the bustling streets of China.',
+          '<br><br>',
+          'At the heart of our Chow Mein are the noodles, cooked to perfection to achieve a delicate balance of chewiness and tenderness. Made from the finest ingredients and expertly prepared, our noodles serve as the perfect base for absorbing the rich flavors of the dish.',
+          '<br><br>',
+          'Complementing the noodles are a colorful assortment of crisp vegetables, including crunchy bell peppers, sweet carrots, and crisp snap peas. Sourced from local farms and meticulously sliced, our vegetables add a burst of freshness and vibrancy to every bite, ensuring a satisfying and nutritious meal.',
+          '<br><br>',
+          'To add a touch of indulgence, we include tender pieces of meat, such as succulent chicken, juicy beef, or flavorful shrimp, depending on your preference.Marinated in a blend of spices and seared to perfection, our meat adds a rich and savory depth to the dish, elevating it to new heights of culinary excellence.',
+          '<br><br>',
+          'Completing the ensemble is our signature sauce, a tantalizing blend of savory soy sauce, aromatic garlic, and a hint of sweetness. Drizzled generously over the noodles, vegetables, and meat, our sauce ties the dish together, infusing every bite with a rich and complex flavor profile that will leave you craving for more.',
+          '<br><br>',
+          'Whether enjoyed as a quick and satisfying lunch option or savored as a hearty dinner choice, our Chow Mein is the perfect choice for anyone looking to indulge in a delicious and satisfying meal. With its satisfying textures, vibrant flavors, and wholesome ingredients, its a culinary creation that promises to delight your taste buds and leave you wanting more.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay14()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Chow Mein</h5>',
+          '<p class="card-text">Noodles,Vegetables,Meat,Sauce</p>',
+          '<a href="cart.html?name=Chow Mein&price=300&description=Noodles,Vegetables,Meat,Sauce&image=image/di2.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-300</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row border no-gutters">',
+          '<div class="col-sm ">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Pasta</h5>',
+          '<p class="card-text">Macroni, White Sauces & Chicken</p>',
+          '<a href="cart.html?name=Pasta&price=400&description=Macroni, White Sauces & Chicken&image=image/di3.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-400</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/di3.png" alt="" height="250px" width="100%">',
+          '<div id="overlay15" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay15()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Indulge in a culinary delight with our mouthwatering Pasta, a delectable dish featuring tender macaroni, creamy white sauce, and succulent chicken. Each forkful is a symphony of flavors and textures, promising a comforting and satisfying dining experience that will leave you craving for more.',
+          '<br><br>',
+          'At the heart of our Pasta dish is the tender macaroni, cooked to perfection to achieve the ideal balance of softness and firmness. Made from premium quality durum wheat semolina, our macaroni provides the perfect canvas for absorbing the rich flavors of the sauce and chicken.',
+          '<br><br>',
+          'Complementing the macaroni is our creamy white sauce, a velvety blend of butter, flour, and milk, infused with aromatic herbs and spices to create a luxurious and indulgent flavor profile. Thick and creamy, our sauce coats each macaroni noodle with a rich and velvety texture, adding a decadent touch to every bite.',
+          '<br><br>',
+          'To add a protein-packed punch to the dish, we include tender pieces of chicken, marinated in a flavorful blend of herbs and spices and sautéed to perfection. Juicy and succulent, our chicken adds a savory depth to the dish, creating a perfect harmony of flavors that will tantalize your taste buds.',
+          '<br><br>',
+          'Whether enjoyed as a comforting meal on a cozy evening or shared with friends and family at a festive gathering, our Pasta is the perfect choice for anyone looking to indulge in a delicious and satisfying dining experience. With its creamy texture, savory flavors, and wholesome ingredients, its a culinary creation that promises to delight your senses and leave you feeling fully satisfied.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay15()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Macroni with Chicken Wings</h5>',
+          '<p class="card-text">Macroni, Chicken Wings & Vegetables</p>',
+          '<a href="cart.html?name=Macroni with Chicken Wings&price=290&description=Macroni, Chicken Wings & Vegetables&image=image/di4.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-290</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/di4.png" alt="" height="250px" width="100%">',
+          '<div id="overlay16" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay16()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Treat yourself to a savory delight with our flavorful Macroni with Chicken Wings, a mouthwatering combination of tender macaroni, succulent chicken wings, and crisp vegetables. Each bite is a harmony of textures and tastes, promising a satisfying and indulgent dining experience that will leave you craving for more.',
+          '<br><br>',
+          'At the heart of our dish is the tender macaroni, cooked to perfection to achieve the ideal balance of softness and firmness. Made from premium quality durum wheat semolina, our macaroni provides the perfect base for soaking up the rich flavors of the dish.',
+          '<br><br>',
+          'Accompanying the macaroni are succulent chicken wings, marinated in a tantalizing blend of spices and herbs and grilled to perfection. Juicy and flavorful, our chicken wings add a savory depth to the dish, providing a protein-packed punch that will leave you feeling satisfied and nourished.',
+          '<br><br>',
+          'Complementing the macaroni and chicken wings are crisp and colorful vegetables, including crunchy bell peppers, sweet carrots, and crisp snap peas. Sourced from local farms and expertly prepared, our vegetables add a burst of freshness and vibrancy to every bite, ensuring a wholesome and satisfying meal.',
+          '<br><br>',
+          'Whether enjoyed as a comforting dinner option or shared with friends and family at a festive gathering, our Macroni with Chicken Wings is the perfect choice for anyone looking to indulge in a delicious and satisfying dining experience. With its satisfying textures, savory flavors, and wholesome ingredients, its a culinary creation that promises to delight your senses and leave you feeling fully satisfied.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay16()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row mb-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/di5.png" alt="" height="250px" width="100%">',
+          '<div id="overlay17" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay17()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Indulge in the creamy richness of our White Karahi, a delightful dish featuring tender chicken simmered in a luscious white sauce. Each spoonful is a symphony of flavors and aromas, promising a culinary experience that will tantalize your taste buds and leave you craving for more.',
+          '<br><br>',
+          'At the heart of our White Karahi is the succulent chicken, marinated in a flavorful blend of spices and herbs, and cooked to perfection until tender and juicy. Sourced from the finest cuts of meat, our chicken is the epitome of indulgence, offering a rich and savory taste experience with every bite.',
+          '<br><br>',
+          'Complementing the tender chicken is our signature white sauce, a velvety blend of cream, yogurt, and aromatic spices, simmered to perfection to create a luxurious and indulgent texture. Rich and creamy, our sauce envelops each piece of chicken in a blanket of flavor, adding a decadent touch to every spoonful.',
+          '<br><br>',
+          'Whether enjoyed as a hearty main course or shared as part of a festive feast, our White Karahi is the perfect choice for anyone looking to indulge in a delicious and satisfying dining experience. With its rich flavors, creamy texture, and tender chicken, its a culinary creation that promises to delight your senses and leave you feeling fully satisfied.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay17()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">White Karahi</h5>',
+          '<p class="card-text">Chicken & White Sauces</p>',
+          '<a href="cart.html?name=White Karahi&price=600&description=Chicken & White Sauces&image=image/di5.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-600</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/di6.png" alt="" height="250px" width="100%">',
+          '<div id="overlay18" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay18()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Savor the succulent flavors of our Malai Boti, a mouthwatering dish featuring tender pieces of juicy chicken marinated in a creamy white sauce and topped with delectable garnishes. Each bite is a celebration of rich textures and vibrant flavors, promising a culinary experience that will leave you longing for more.',
+          '<br><br>',
+          'At the heart of our Malai Boti is the premium white chicken meat, carefully selected and marinated in a blend of aromatic spices, yogurt, and cream. This infusion of flavors ensures that each piece of chicken is tender, juicy, and bursting with deliciousness, creating a sensation of culinary delight with every bite.',
+          '<br><br>',
+          'Complementing the succulent chicken is our signature white sauce, made from the finest cream and infused with aromatic herbs and spices. This creamy concoction adds a luxurious richness to the dish, enveloping the chicken in a velvety blanket of flavor that tantalizes the taste buds and leaves you craving for more.',
+          '<br><br>',
+          'To elevate the dish even further, we top our Malai Boti with a medley of delectable garnishes, such as fresh coriander leaves, finely chopped green chilies, and a sprinkle of chaat masala. These vibrant additions not only enhance the visual appeal of the dish but also add layers of complexity to the flavor profile, creating a harmonious balance of savory, spicy, and tangy notes that dance on the palate.',
+          '<br><br>',
+          'Whether enjoyed as a standalone meal or shared with friends and family as part of a festive feast, our Malai Boti is sure to impress even the most discerning palates. With its succulent chicken, creamy sauce, and tantalizing garnishes, its a culinary masterpiece that promises to delight your senses and leave you longing for more with each savory bite.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay18()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Malai Boti</h5>',
+          '<p class="card-text">White Juicy Chicken with Toping</p>',
+          '<a href="cart.html?name=Malai Boti&price=400&description=White Juicy Chicken with Toping&image=image/di6.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-400</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+        ],
+        drinks: [
+          '<div class="row mt-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/drink1.png" alt="" height="250px" width="100%">',
+          '<div id="overlay19" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay19()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Quench your thirst with our refreshing Red Drink, a delightful watermelon-based beverage crafted to perfection and available with or without added sugar. Each sip is a burst of fruity goodness, promising to rejuvenate your senses and keep you cool on even the hottest days.',
+          '<br><br>',
+          'At the heart of our Red Drink is the juicy sweetness of ripe watermelon, carefully selected and blended to extract its natural flavors and nutrients. Bursting with hydration and vitamins, watermelon serves as the perfect base for our refreshing beverage, offering a deliciously sweet and refreshing taste thats sure to delight your taste buds.',
+          '<br><br>',
+          'For those who prefer a touch of sweetness, we offer our Red Drink with a hint of sugar, carefully balanced to enhance the natural sweetness of the watermelon without overpowering its fresh flavor. Each sip is a symphony of sweetness and refreshment, leaving you feeling satisfied and invigorated.',
+          '<br><br>',
+          'For those who prefer a lighter option, our Red Drink is also available without added sugar, allowing you to enjoy the pure, unadulterated taste of fresh watermelon with every sip. Crisp and refreshing, this sugar-free version is the perfect choice for those looking to indulge in a guilt-free treat without compromising on flavor.',
+          '<br><br>',
+          'Whether enjoyed on its own as a refreshing pick-me-up or paired with your favorite meal for a burst of fruity goodness, our Red Drink is the perfect choice for anyone looking to beat the heat and quench their thirst in style. With its delicious watermelon flavor and customizable sweetness levels, its a beverage thats sure to please every palate and leave you feeling refreshed and revitalized.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay19()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Red Drink</h5>',
+          '<p class="card-text">WaterMelon Drink with Sugar</p>',
+          '<a href="cart.html?name=Red Drink&price=60&description=WaterMelon Drink with & Without Sugar&image=image/drink1.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-60</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/drink2.png" alt="" height="250px" width="100%">',
+          '<div id="overlay20" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay20()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Cool off with our invigorating Mint Drink, a refreshing concoction infused with the crisp essence of mint and a zesty splash of lemon. Each sip is a revitalizing burst of flavor, promising to awaken your senses and leave you feeling refreshed and rejuvenated.',
+          '<br><br>',
+          'At the heart of our Mint Drink is the fresh, vibrant flavor of mint leaves, handpicked and steeped to perfection to extract their natural essence. Known for its cooling properties and refreshing taste, mint serves as the perfect base for our revitalizing beverage, offering a burst of crispness with every sip.',
+          '<br><br>',
+          'To enhance the refreshing experience, we add a splash of tangy lemon juice to our Mint Drink, creating a delightful contrast of flavors that tantalizes the taste buds and invigorates the palate. The zesty acidity of the lemon perfectly complements the coolness of the mint, creating a harmonious blend thats both revitalizing and delicious.',
+          '<br><br>',
+          'Whether enjoyed on a hot summer day or as a palate cleanser between courses, our Mint Drink is the perfect choice for anyone looking to beat the heat and quench their thirst in style. With its invigorating mint flavor and zesty lemon twist, its a beverage thats sure to leave you feeling refreshed, revitalized, and ready to take on whatever the day may bring.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay20()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Mint Drink</h5>',
+          '<p class="card-text">Mint Drink with some lemon</p>',
+          '<a href="cart.html?name=Mint Drink&price=70&description=Mint Drink with some lemon&image=image/drink2.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-70</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row border no-gutters">',
+          '<div class="col-sm ">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Soft Drink</h5>',
+          '<p class="card-text">Chilled Soft Drink with Ice</p>',
+          '<a href="cart.html?name=Soft Drink&price=50&description=Chilled Soft Drink with Ice&image=image/drink3.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-50</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/drink3.png" alt="" height="250px" width="100%">',
+          '<div id="overlay21" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay21()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Quench your thirst with our Chilled Soft Drink, a refreshing beverage served ice-cold for the ultimate cooling sensation. Each sip is a burst of effervescence and flavor, promising to invigorate your senses and keep you feeling refreshed all day long.',
+          '<br><br>',
+          'At the heart of our Soft Drink is a perfectly balanced blend of fizzy carbonation and delicious flavor. Whether you prefer the classic taste of cola, the tangy zest of lemon-lime, or the fruity sweetness of orange, our selection of soft drinks offers something to please every palate.',
+          '<br><br>',
+          'Served chilled and garnished with ice, our Soft Drink is the perfect way to beat the heat and quench your thirst on even the hottest days. The ice-cold temperature enhances the refreshing qualities of the beverage, ensuring that each sip is a cool and revitalizing experience.',
+          '<br><br>',
+          'Whether enjoyed on its own as a refreshing pick-me-up or paired with your favorite meal for a burst of flavor, our Chilled Soft Drink is the perfect choice for anyone looking to indulge in a cool and satisfying beverage. With its crisp carbonation, delicious flavor, and icy freshness, its a drink thats sure to leave you feeling refreshed and revitalized with every sip.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay21()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Orange Drink</h5>',
+          '<p class="card-text">Chilled Orange Drink with Ice Cubes</p>',
+          '<a href="cart.html?name=Orange Drink&price=60&description=Chilled Orange Drink with Ice Cubes&image=image/drink4.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-60</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/drink4.png" alt="" height="250px" width="100%">',
+          '<div id="overlay22" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay22()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Beat the heat with our Chilled Orange Drink, a refreshing beverage bursting with the tangy sweetness of ripe oranges and served over ice cubes for an extra cool sensation. Each sip is a burst of citrusy goodness, promising to invigorate your senses and keep you feeling refreshed all day long.',
+          '<br><br>',
+          'At the heart of our Orange Drink is the vibrant flavor of freshly squeezed oranges, handpicked at the peak of ripeness to ensure maximum juiciness and sweetness. We carefully blend the pure orange juice with a hint of sweetness to create a perfectly balanced beverage thats both refreshing and satisfying.',
+          '<br><br>',
+          'Served chilled and garnished with ice cubes, our Orange Drink is the perfect way to cool down on a hot summer day or any time you need a refreshing pick-me-up. The icy cubes enhance the crispness of the drink, ensuring that each sip is as cool and revitalizing as the last.',
+          '<br><br>',
+          'Whether enjoyed on its own as a refreshing thirst quencher or paired with your favorite meal for a burst of citrusy flavor, our Chilled Orange Drink is the perfect choice for anyone looking to indulge in a cool and satisfying beverage. With its tangy sweetness, icy freshness, and vibrant orange flavor, its a drink thats sure to brighten your day and leave you feeling refreshed and revitalized with every sip.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay22()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row mb-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/drink5.png" alt="" height="250px" width="100%">',
+          '<div id="overlay23" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay23()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Quench your thirst and indulge in tropical bliss with our Mango Shake! Crafted from the finest mangoes and creamy milk, this delightful concoction is served over ice cubes for a refreshing chill thats perfect for any occasion.',
+          '<br><br>',
+          'At the heart of our Mango Shake lies the essence of sun-kissed mangoes, bursting with natural sweetness and vibrant flavor. Handpicked at the peak of ripeness, these mangoes are blended to perfection, resulting in a smooth and velvety texture thats simply irresistible.',
+          '<br><br>',
+          'Paired with creamy milk, our Mango Shake achieves the perfect balance of sweetness and creaminess. Each sip is a journey to paradise, with the tropical essence of mangoes dancing on your palate and the rich, velvety milk adding a luxurious touch to every sip.',
+          '<br><br>',
+          'Served over ice cubes, our Mango Shake delivers a refreshing burst of coolness with every sip. Whether youre lounging by the pool or enjoying a sunny day at the beach, this icy treat is sure to keep you feeling refreshed and revitalized.',
+          '<br><br>',
+          'Whether enjoyed as a midday pick-me-up or a sweet ending to a delicious meal, our Mango Shake is the perfect choice for anyone looking to indulge in a taste of tropical paradise. With its creamy texture, vibrant flavor, and refreshing chill, its a drink thats sure to transport you to a sunny getaway with every sip.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay23()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Mango Shake</h5>',
+          '<p class="card-text">Milk, Mangoes with Ice Cubes</p>',
+          '<a href="cart.html?name=Mango Shake&price=120&description=Milk, Mangoes with Ice Cubes&image=image/drink5.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-120</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/drink6.png" alt="" height="250px" width="100%">',
+          '<div id="overlay24" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay24()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Fruity Drink, a delightful blend of seasonal fruits and ice cubes that promises to refresh and revitalize your senses with every sip.',
+          '<br><br>',
+          'At the heart of our Fruity Drink is a medley of seasonal fruits, carefully selected to capture the essence of the season and deliver a burst of natural sweetness and vibrant flavors. From juicy watermelon to succulent berries and crisp citrus, each fruit adds its own unique twist to the refreshing concoction.',
+          '<br><br>',
+          'Combined with ice cubes, our Fruity Drink becomes a frosty oasis on even the hottest days, delivering a cool and invigorating sensation thats perfect for quenching your thirst and beating the heat.',
+          '<br><br>',
+          'Whether enjoyed as a refreshing pick-me-up or a delicious accompaniment to your favorite meal, our Fruity Drink is the perfect choice for anyone looking to indulge in the flavors of the season. With its colorful array of fruits, icy freshness, and tantalizing taste, its a beverage thats sure to brighten your day and leave you feeling refreshed and revitalized with every sip.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay24()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Fruity Drink</h5>',
+          '<p class="card-text">Seasonal Fruits Combo & Ice Cubes</p>',
+          '<a href="cart.html?name=Fruity Drink&price=100&description=Seasonal Fruits Combo & Ice Cubes&image=image/drink6.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-100</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+        ],
+        desserts: [
+          '<div class="row mt-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/de1.png" alt="" height="250px" width="100%">',
+          '<div id="overlay25" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay25()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our ChocoLava Cups, a decadent dessert experience where rich, velvety chocolate flows from a warm, indulgent cake. Each bite is a journey into chocolate heaven, promising a luscious and unforgettable treat that will delight your senses.',
+          '<br><br>',
+          'At the heart of our ChocoLava Cups is a moist and fluffy cake, carefully baked to perfection to achieve the ideal balance of texture and flavor. As you sink your spoon into the cake, youll discover a hidden treasure - a molten core of gooey chocolate that oozes out with every decadent bite.',
+          '<br><br>',
+          'The rich, velvety chocolate filling is made from the finest cocoa, melted to perfection to create a smooth and indulgent flow of chocolatey goodness. Whether dark, milk, or white chocolate, our filling is sure to satisfy even the most discerning chocolate lovers cravings.',
+          '<br><br>',
+          'Served warm and topped with a dusting of cocoa powder or a scoop of creamy vanilla ice cream, our ChocoLava Cups are the ultimate indulgence for any chocolate aficionado. Whether enjoyed as a sweet ending to a meal or a special treat on its own, each bite is a celebration of chocolatey bliss thats sure to leave you craving for more.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay25()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">ChocoLava Cups</h5>',
+          '<p class="card-text">Chocolate flowing from a cake</p>',
+          '<a href="cart.html?name=ChocoLava Cups&price=200&description=It encapsulates the essence of chocolate flowing from a cake in a cup shape.&image=image/de1.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-200</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/de2.png" alt="" height="250px" width="100%">',
+          '<div id="overlay26" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay26()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Vanilla Berry Delight, a delightful dessert that combines the timeless appeal of vanilla cake with the vibrant freshness of mixed berries and a touch of cream. Each bite is a harmonious blend of sweet and tangy flavors, promising a luscious treat that will tantalize your taste buds and leave you craving for more.',
+          '<br><br>',
+          'At the heart of our Vanilla Berry Delight is a moist and flavorful vanilla cake, baked to perfection to achieve a delicate crumb and a rich, buttery taste. Layered with a light and fluffy cream frosting, our cake is the epitome of indulgence, offering a satisfying sweetness that perfectly complements the tartness of the berries.',
+          '<br><br>',
+          'Topping our Vanilla Berry Delight is a colorful medley of mixed berries, including juicy strawberries, plump blueberries, and tangy raspberries. Sourced from the finest orchards and bursting with natural sweetness, these berries add a burst of freshness and vibrancy to every bite, creating a delightful contrast of flavors and textures.',
+          '<br><br>',
+          'To add a final touch of indulgence, we drizzle our Vanilla Berry Delight with a light and creamy sauce, adding a luxurious richness to the dessert that enhances its overall appeal. Whether enjoyed as a sweet ending to a meal or a special treat on its own, our Vanilla Berry Delight is sure to impress even the most discerning dessert connoisseurs with its irresistible combination of flavors and textures.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay26()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Vanilla Berry Delight</h5>',
+          '<p class="card-text">Vanilla cake with a touch of cream</p>',
+          '<a href="cart.html?name=Vanilla Berry Delight&price=150&description= It hints at the vanilla cake with a touch of cream and a burst of strawberry flavor on top.&image=image/de2.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-150</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row border no-gutters">',
+          '<div class="col-sm ">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Chocolate Dream Supreme</h5>',
+          '<p class="card-text">Full chocolate cream on top</p>',
+          '<a href="cart.html?name=Chocolate Dream Supreme&price=200&description=It captures the richness of the dessert with the full chocolate cream on top, complemented by a hint of cream and adorned with chocolate garnishes.&image=image/de3.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-200</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/de3.png" alt="" height="250px" width="100%">',
+          '<div id="overlay27" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay27()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Chocolate Dream Supreme, a decadent dessert that embodies the ultimate chocolate indulgence with a luxurious layer of creamy chocolate topping. Every spoonful is a blissful journey into the realm of rich cocoa flavors and velvety smoothness, promising a dessert experience that will delight even the most discerning chocolate lover.',
+          '<br><br>',
+          'At the heart of our Chocolate Dream Supreme lies a base of moist and decadent chocolate cake, crafted from the finest cocoa and baked to perfection to achieve a delicate crumb and irresistible richness. Each bite is a symphony of chocolatey goodness, enveloping your palate in a wave of pure delight.',
+          '<br><br>',
+          'Topping our Chocolate Dream Supreme is a generous layer of luscious chocolate cream, meticulously whipped to a silky-smooth consistency that melts in your mouth with every spoonful. Made from premium chocolate and cream, this heavenly topping adds an extra dimension of richness and indulgence to the dessert, elevating it to new heights of chocolatey bliss.',
+          '<br><br>',
+          'Whether enjoyed as a decadent treat after a meal or as a special indulgence on its own, our Chocolate Dream Supreme is sure to satisfy your cravings for something sweet and luxurious. With its irresistible combination of moist cake and creamy chocolate topping, its a dessert thats sure to leave you dreaming of chocolate long after the last spoonful is gone.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay27()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Pineapple Paradise Pastry</h5>',
+          '<p class="card-text">Vanilla Cake,Cream,Pineapple</p>',
+          '<a href="cart.html?name=Pineapple Paradise Pastry&price=160&description=It evokes the image of a delightful vanilla pastry topped with creamy goodness and juicy pineapples, creating a tropical paradise in every bite.&image=image/de4.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-160</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/de4.png" alt="" height="250px" width="100%">',
+          '<div id="overlay28" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay28()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Pineapple Paradise Pastry, a delectable creation that transports you to tropical bliss with every bite. Crafted from layers of moist vanilla cake, luscious cream, and succulent pineapple, this pastry is a symphony of flavors and textures that will leave you longing for more.',
+          '<br><br>',
+          'At the heart of our Pineapple Paradise Pastry is a base of light and airy vanilla cake, baked to perfection to achieve a delicate crumb and irresistible sweetness. Each layer provides the perfect foundation for the indulgent layers of cream and pineapple that follow.',
+          '<br><br>',
+          'Layered between the vanilla cake is a generous spread of creamy filling, adding a velvety richness to the pastry that melts in your mouth with every bite. Made from the finest ingredients, our cream filling adds a luxurious touch to the dessert, ensuring a truly indulgent experience.',
+          '<br><br>',
+          'Topping our Pineapple Paradise Pastry is a crown of succulent pineapple, bursting with tropical sweetness and vibrant flavor. Sourced from the finest orchards, our pineapple adds a refreshing twist to the pastry, complementing the richness of the cake and cream with its natural tanginess.',
+          '<br><br>',
+          'Whether enjoyed as a sweet treat after a meal or as a special indulgence on its own, our Pineapple Paradise Pastry is sure to transport your taste buds to a tropical paradise. With its irresistible combination of vanilla cake, creamy filling, and juicy pineapple, its a pastry thats sure to leave you dreaming of sunny shores and swaying palm trees with every heavenly bite.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay28()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row mb-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/de5.png" alt="" height="250px" width="100%">',
+          '<div id="overlay29" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay29()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Indulge in the ultimate dessert experience with our ChocoBerry Sundream, a heavenly creation that combines the richness of chocolate with the vibrant freshness of berries in a decadent sundae.',
+          '<br><br>',
+          'At the core of our ChocoBerry Sundream is the indulgent richness of chocolate, meticulously crafted into creamy swirls of velvety goodness. Each spoonful is a symphony of cocoa flavors, offering a luscious and satisfying treat that will delight chocolate lovers of all ages.',
+          '<br><br>',
+          'Topping our ChocoBerry Sundream are a medley of succulent berries, including plump strawberries, juicy blueberries, and tangy raspberries. Sourced from the finest orchards and bursting with natural sweetness, these berries add a refreshing twist to the indulgent chocolate base, creating a delightful contrast of flavors and textures.',
+          '<br><br>',
+          'Layered between the chocolate swirls and berries is a cascade of silky whipped cream, adding a light and airy touch to the sundae that enhances its overall decadence. With each spoonful, the creamy goodness of the whipped cream blends seamlessly with the rich chocolate and juicy berries, creating a truly indulgent dessert experience that will leave you craving for more.',
+          '<br><br>',
+          'Whether enjoyed as a special treat on a sunny afternoon or shared with friends and family after a delicious meal, our ChocoBerry Sundream is sure to satisfy your sweet cravings and leave you dreaming of chocolatey bliss with every heavenly bite.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay29()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">ChocoBerry Sundream</h5>',
+          '<p class="card-text">Richness of chocolate in sundae</p>',
+          '<a href="cart.html?name=ChocoBerry Sundream&price=300&description= It combines the richness of chocolate in a sundae with the freshness of strawberries, creating a delightful dreamy dessert experience.&image=image/de5.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-300</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/de6.png" alt="" height="250px" width="100%">',
+          '<div id="overlay30" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay30()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Savor the divine essence of love with our Cocoa Love Medley, a romantic delight that combines the richness of chocolate in heart-shaped form with the luscious sweetness of berries. Each bite is a celebration of passion and indulgence, promising a symphony of flavors that will captivate your senses and warm your heart.',
+          '<br><br>',
+          'At the center of our Cocoa Love Medley lies a decadent heart-shaped chocolate, crafted from the finest cocoa beans and expertly molded to perfection. Rich, velvety, and irresistibly smooth, each bite of chocolate is a declaration of love, enveloping you in its luxurious embrace.',
+          '<br><br>',
+          'Adorning our Cocoa Love Medley are succulent berries, including plump strawberries, juicy blueberries, and tangy raspberries, carefully arranged to complement the richness of the chocolate with their natural sweetness and vibrant flavors. Each berry adds a burst of freshness and color to the medley, creating a harmonious blend of textures and tastes that will leave you craving for more.',
+          '<br><br>',
+          'Whether enjoyed as a romantic gesture with your special someone or savored as a decadent treat on your own, our Cocoa Love Medley is sure to ignite your passion and delight your taste buds. With its exquisite combination of chocolate and berries, its a medley of love and indulgence thats perfect for any occasion.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay30()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Cocoa Love Medley</h5>',
+          '<p class="card-text">Chocolate in Heart Shape with Berry</p>',
+          '<a href="cart.html?name=Cocoa Love Medley&price=199&description=It reflects the romance of a chocolate heart paired with the sweetness of strawberries, creating a harmonious medley of flavors.&image=image/de6.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-199</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+        ],
+        wine: [
+          '<div class="row mt-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/w1.gif" alt="" height="250px" width="100%">',
+          '<div id="overlay31" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay31()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Experience pure pizza pleasure with our mouthwatering creation, the Pure Pizza Pleasure. Crafted to perfection, this cheesy delight promises to satisfy your cravings without the distraction of olives, allowing you to fully immerse yourself in the rich flavors and comforting textures of a classic pizza experience.',
+          '<br><br>',
+          'At the heart of our Pure Pizza Pleasure is a crispy golden crust, baked to perfection to achieve the ideal balance of crunchiness and chewiness. Topped with a generous layer of tangy tomato sauce, our pizza provides the perfect canvas for a symphony of cheesy goodness.',
+          '<br><br>',
+          'Indulge in the creamy richness of our signature cheese blend, featuring a tantalizing combination of mozzarella, cheddar, and Parmesan. Each bite is a melty sensation of cheesy perfection, ensuring that every slice is a true delight for cheese lovers.',
+          '<br><br>',
+          'Whether enjoyed as a quick lunch, a satisfying dinner, or a crowd-pleasing party snack, our Pure Pizza Pleasure is the perfect choice for anyone looking to indulge in a classic pizza experience without the distraction of olives. With its irresistible cheesiness and satisfying crust, its a pizza that promises pure pleasure with every bite.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay31()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Pure Pizza Pleasure</h5>',
+          '<p class="card-text">Cheesy pizza without olives</p>',
+          '<a href="cart.html?name=Pure Pizza Pleasure&price=1500&description=It emphasizes the simplicity and deliciousness of a cheesy pizza without olives, focusing on the enjoyment of the cheesy goodness.&image=image/w1.gif" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-1500</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/w2.png" alt="" height="250px" width="100%">',
+          '<div id="overlay32" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay32()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Garden Fresh Delight, a flavorful vegetable pizza crafted to perfection without the distraction of olives. Bursting with vibrant colors and garden-fresh flavors, this pizza promises a delightful culinary experience that celebrates the essence of wholesome ingredients.',
+          '<br><br>',
+          'At the core of our Garden Fresh Delight lies a crispy yet chewy crust, lovingly baked to golden perfection. Topped generously with a tangy tomato sauce, it sets the stage for a symphony of fresh vegetables.',
+          '<br><br>',
+          'Indulge in the garden-fresh goodness of our vegetable toppings, including colorful bell peppers, sweet red onions, juicy tomatoes, earthy mushrooms, and crisp spinach. Each bite is a harmonious blend of textures and flavors, ensuring a satisfying and nutritious pizza experience.',
+          '<br><br>',
+          'Enhancing the savory goodness of our Garden Fresh Delight is a premium cheese blend, featuring the perfect combination of mozzarella, Parmesan, and provolone. Melted to gooey perfection, it adds a creamy richness that complements the freshness of the vegetables.',
+          '<br><br>',
+          'Whether enjoyed as a wholesome meal for lunch or dinner, or shared with friends and family as a delicious appetizer, our Garden Fresh Delight is the perfect choice for pizza lovers who prefer their pies without olives. With its abundance of garden-fresh vegetables and irresistible cheesy goodness, its a pizza that promises to delight your taste buds and leave you craving for more.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay32()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Garden Fresh Delight</h5>',
+          '<p class="card-text">Vegetable pizza without olives</p>',
+          '<a href="cart.html?name=Garden Fresh Delight&price=1000&description= It captures the essence of a vegetable pizza without olives, emphasizing the freshness and variety of vegetables used as toppings.&image=image/w2.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-1000</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row border no-gutters">',
+          '<div class="col-sm ">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Top Notch Pizza</h5>',
+          '<p class="card-text">Pizza with high-quality toppings</p>',
+          '<a href="cart.html?name=Top Notch Pizza&price=2000&description= It conveys the idea of a pizza with high-quality toppings, ensuring a delicious and satisfying experience with every bite.&image=image/w3.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-2000</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/w3.png" alt="" height="250px" width="100%">',
+          '<div id="overlay33" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay33()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Top Notch Pizza, a gourmet masterpiece crafted with only the finest, high-quality toppings for an unparalleled dining experience. Each bite is a testament to our commitment to excellence, promising a symphony of flavors and textures that elevate the classic pizza to new heights of culinary delight.',
+          '<br><br>',
+          'At the heart of our Top Notch Pizza is a handcrafted crust, lovingly made from the finest ingredients and baked to golden perfection. Crispy on the outside yet soft and chewy on the inside, it provides the perfect base for our premium toppings.',
+          '<br><br>',
+          'Indulge in the luxurious richness of our top-quality toppings, meticulously selected to tantalize your taste buds and satisfy your cravings. From succulent grilled chicken and tender steak strips to flavorful Italian sausage and savory bacon, each topping is a testament to our dedication to quality and flavor.',
+          '<br><br>',
+          'Enhancing the savory goodness of our Top Notch Pizza is a melty blend of premium cheeses, including creamy mozzarella, sharp Parmesan, and tangy provolone. Melted to perfection, it adds a luscious layer of richness that perfectly complements the bold flavors of the toppings.',
+          '<br><br>',
+          'Whether enjoyed as a satisfying meal for lunch or dinner, or shared with friends and family as a delicious centerpiece for any occasion, our Top Notch Pizza is sure to impress even the most discerning palates. With its high-quality toppings and exquisite flavors, its a pizza that truly lives up to its name, delivering a top - notch dining experience with every slice.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay33()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Golden Catch Delight</h5>',
+          '<p class="card-text">Crispy Fried Fish</p>',
+          '<a href="cart.html?name=Golden Catch Delight&price=1600&description= It paints a picture of perfectly fried fish with a crispy, golden exterior and tender, flaky interior, promising a delightful culinary experience.&image=image/w4.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-1600</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/w4.png" alt="" height="250px" width="100%">',
+          '<div id="overlay34" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay34()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Golden Catch Delight, a delectable dish featuring crispy fried fish that promises to tantalize your taste buds with every bite. Made with the freshest catch of the day and expertly seasoned, this dish is sure to be a hit with seafood lovers and anyone craving a satisfying meal.',
+          '<br><br>',
+          'At the heart of our Golden Catch Delight is the star of the show - tender, flaky fish fillets coated in a golden, crispy batter. Each fillet is carefully seasoned with a blend of herbs and spices, ensuring a perfect balance of flavors that enhance the natural sweetness of the fish.',
+          '<br><br>',
+          'Fried to golden perfection, our crispy fish fillets are irresistibly crunchy on the outside while remaining tender and moist on the inside. Whether enjoyed on its own as a satisfying snack or as part of a hearty meal, each bite is a delightful explosion of flavor and texture.',
+          '<br><br>',
+          'Accompanying our crispy fried fish is a selection of mouthwatering sides, including golden fries, creamy coleslaw, and tangy tartar sauce. Together, they create a balanced and satisfying meal thats perfect for any occasion.',
+          '<br><br>',
+          'Whether youre craving a classic fish and chips experience or simply looking for a delicious seafood dish to enjoy, our Golden Catch Delight is sure to hit the spot. With its crispy exterior, tender interior, and flavorful seasoning, its a dish thats sure to leave you coming back for more.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay34()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '</div>',
+          '<div class="row mb-5 border no-gutters">',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/w5.png" alt="" height="250px" width="100%">',
+          '<div id="overlay35" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay35()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Introducing our Loaded Fries, a tantalizing treat that takes traditional fries to a whole new level of indulgence with an array of mouthwatering toppings. Each bite is a flavor-packed explosion that will leave you craving for more.',
+          '<br><br>',
+          'At the core of our Loaded Fries are crispy golden fries, cooked to perfection to achieve the ideal balance of crunchiness and tenderness. These fries serve as the perfect canvas for our generous toppings, ensuring that every bite is a symphony of flavors and textures.',
+          '<br><br>',
+          'Indulge in the richness of our toppings, which include savory bacon bits, tangy melted cheese, creamy sour cream, and zesty green onions. Each topping is carefully layered onto the fries, creating a delicious medley of flavors that will tantalize your taste buds and leave you wanting more.',
+          '<br><br>',
+          'Whether enjoyed as a satisfying snack on its own or shared with friends and family as a delicious appetizer, our Loaded Fries are sure to impress even the most discerning palates. With their irresistible combination of crispy fries and flavorful toppings, theyre the ultimate comfort food indulgence thats perfect for any occasion.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay35()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Loaded Fries</h5>',
+          '<p class="card-text">Loaded fries with toppings</p>',
+          '<a href="cart.html?name=Loaded Fries&price=800&description=It conveys the idea of loaded fries piled high with delicious toppings, promising a satisfying and indulgent culinary adventure.&image=image/w5.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-800</div>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div style="position: relative;">',
+          '<img src="image/w6.png" alt="" height="250px" width="100%">',
+          '<div id="overlay36" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); display: none;">',
+          '<div style="position: absolute; top: 20px; right: 20px; cursor: pointer;" onclick="closeOverlay36()">',
+          '<i class="fa fa-times-circle" style="font-size: 24px;"></i>',
+          '</div>',
+          '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; max-height: 240px; background-color: white; padding: 20px; border-radius: 10px; overflow-y: auto;">',
+          '<p>',
+          'Treat yourself to a taste sensation with our Crisp Fries, a delightful combination of golden fries, tantalizing sauces, and flavorful spices that promise to satisfy your cravings and elevate your snacking experience.',
+          '<br><br>',
+          'At the heart of our Crisp Fries are perfectly cooked fries, meticulously prepared to achieve a crispy exterior and fluffy interior thats simply irresistible.Each fry is seasoned to perfection with a blend of spices that adds a burst of flavor with every bite.',
+          '<br><br>',
+          'Accompanying our crispy fries are a selection of mouthwatering sauces, including tangy ketchup, creamy mayo, zesty barbecue, and spicy sriracha. Whether you prefer to dip, drizzle, or smother your fries, our sauces are sure to add an extra dimension of flavor that will leave you craving for more.',
+          '<br><br>',
+          'Whether enjoyed as a satisfying snack on its own or paired with your favorite burger or sandwich, our Crisp Fries are the perfect choice for anyone looking to indulge in a classic comfort food experience. With their crispy texture, flavorful seasoning, and tantalizing sauces, theyre sure to become your new go-to snack for any occasion.',
+          '</p>',
+          '</div>',
+          '</div>',
+          '<a href="#" onclick="toggleOverlay36()" style="position: absolute; top: 10px; right: 10px;">',
+          '<i class="fa fa-eye" style="font-size:24px; cursor:pointer;"></i>',
+          '</a>',
+          '</div>',
+          '</div>',
+          '<div class="col-sm">',
+          '<div class="menu-item-card">',
+          '<h5 class="card-title mt-5">Crisp Fries</h5>',
+          '<p class="card-text">Fries, Sauces, Spices</p>',
+          '<a href="cart.html?name=Crisp Fries&price=100&description=It emphasizes the deliciousness of perfectly cooked fries with a crispy exterior and fluffy interior, evoking the image of golden perfection.&image=image/w6.png" class="btn" style="background-color: burlywood;">Order Now</a>',
+          '<div class="price-tag">Rs-100</div>',
+          '</div>',
+          '</div>',
+          '</div>',
+        ],
+        // ... Define content for other menus ...
+      };
+
+      clickableHeadings.forEach((heading) => {
         heading.addEventListener('click', function () {
           const target = this.getAttribute('data-target');
           const tableRow = document.querySelector('.menu-table-row');
@@ -675,14 +1533,543 @@
     });
 
 
-//   document.getElementById('demo').innerHTML='Hello I am from External';
-  
-   </script>
+    //   document.getElementById('demo').innerHTML='Hello I am from External';
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+    // For one
+    function toggleOverlay() {
+      var overlay = document.getElementById("overlay");
+      if (overlay.style.display === "none" || overlay.style.display === "") {
+        overlay.style.display = "block";
+      } else {
+        overlay.style.display = "none";
+      }
+    }
+
+    function closeOverlay() {
+      var overlay = document.getElementById("overlay");
+      overlay.style.display = "none";
+    }
+
+    // for 2
+    function toggleOverlay2() {
+      var overlay2 = document.getElementById("overlay2");
+      if (overlay2.style.display === "none" || overlay2.style.display === "") {
+        overlay2.style.display = "block";
+      } else {
+        overlay2.style.display = "none";
+      }
+    }
+
+    function closeOverlay2() {
+      var overlay2 = document.getElementById("overlay2");
+      overlay2.style.display = "none";
+    }
+    // for 3
+    function toggleOverlay3() {
+      var overlay3 = document.getElementById("overlay3");
+      if (overlay3.style.display === "none" || overlay3.style.display === "") {
+        overlay3.style.display = "block";
+      } else {
+        overlay3.style.display = "none";
+      }
+    }
+
+    function closeOverlay3() {
+      var overlay3 = document.getElementById("overlay3");
+      overlay3.style.display = "none";
+    }
+
+    // for 4
+    function toggleOverlay4() {
+      var overlay4 = document.getElementById("overlay4");
+      if (overlay4.style.display === "none" || overlay4.style.display === "") {
+        overlay4.style.display = "block";
+      } else {
+        overlay4.style.display = "none";
+      }
+    }
+
+    function closeOverlay4() {
+      var overlay4 = document.getElementById("overlay4");
+      overlay4.style.display = "none";
+    }
+
+    // for 5
+
+    function toggleOverlay5() {
+      var overlay5 = document.getElementById("overlay5");
+      if (overlay5.style.display === "none" || overlay5.style.display === "") {
+        overlay5.style.display = "block";
+      } else {
+        overlay5.style.display = "none";
+      }
+    }
+
+    function closeOverlay5() {
+      var overlay5 = document.getElementById("overlay5");
+      overlay5.style.display = "none";
+    }
+
+    // for 6
+
+    function toggleOverlay6() {
+      var overlay6 = document.getElementById("overlay6");
+      if (overlay6.style.display === "none" || overlay6.style.display === "") {
+        overlay6.style.display = "block";
+      } else {
+        overlay6.style.display = "none";
+      }
+    }
+
+    function closeOverlay6() {
+      var overlay6 = document.getElementById("overlay6");
+      overlay6.style.display = "none";
+    }
+
+
+    // for 7
+    function toggleOverlay7() {
+      var overlay7 = document.getElementById("overlay7");
+      if (overlay7.style.display === "none" || overlay7.style.display === "") {
+        overlay7.style.display = "block";
+      } else {
+        overlay7.style.display = "none";
+      }
+    }
+
+    function closeOverlay7() {
+      var overlay7 = document.getElementById("overlay7");
+      overlay7.style.display = "none";
+    }
+
+    // for 8
+    function toggleOverlay8() {
+      var overlay8 = document.getElementById("overlay8");
+      if (overlay8.style.display === "none" || overlay8.style.display === "") {
+        overlay8.style.display = "block";
+      } else {
+        overlay8.style.display = "none";
+      }
+    }
+
+    function closeOverlay8() {
+      var overlay8 = document.getElementById("overlay8");
+      overlay8.style.display = "none";
+    }
+
+    // for 9
+    function toggleOverlay9() {
+      var overlay9 = document.getElementById("overlay9");
+      if (overlay9.style.display === "none" || overlay9.style.display === "") {
+        overlay9.style.display = "block";
+      } else {
+        overlay9.style.display = "none";
+      }
+    }
+
+    function closeOverlay9() {
+      var overlay9 = document.getElementById("overlay9");
+      overlay9.style.display = "none";
+    }
+
+    // for 10
+    function toggleOverlay10() {
+      var overlay10 = document.getElementById("overlay10");
+      if (overlay10.style.display === "none" || overlay10.style.display === "") {
+        overlay10.style.display = "block";
+      } else {
+        overlay10.style.display = "none";
+      }
+    }
+
+    function closeOverlay10() {
+      var overlay10 = document.getElementById("overlay10");
+      overlay10.style.display = "none";
+    }
+
+    // for 11
+    function toggleOverlay11() {
+      var overlay11 = document.getElementById("overlay11");
+      if (overlay11.style.display === "none" || overlay11.style.display === "") {
+        overlay11.style.display = "block";
+      } else {
+        overlay11.style.display = "none";
+      }
+    }
+
+    function closeOverlay11() {
+      var overlay11 = document.getElementById("overlay11");
+      overlay11.style.display = "none";
+    }
+
+    // for 12
+    function toggleOverlay12() {
+      var overlay12 = document.getElementById("overlay12");
+      if (overlay12.style.display === "none" || overlay12.style.display === "") {
+        overlay12.style.display = "block";
+      } else {
+        overlay12.style.display = "none";
+      }
+    }
+
+    function closeOverlay12() {
+      var overlay12 = document.getElementById("overlay12");
+      overlay12.style.display = "none";
+    }
+
+    // for 13
+    function toggleOverlay13() {
+      var overlay13 = document.getElementById("overlay13");
+      if (overlay13.style.display === "none" || overlay13.style.display === "") {
+        overlay13.style.display = "block";
+      } else {
+        overlay13.style.display = "none";
+      }
+    }
+
+    function closeOverlay13() {
+      var overlay13 = document.getElementById("overlay13");
+      overlay13.style.display = "none";
+    }
+    // for 14
+    function toggleOverlay14() {
+      var overlay14 = document.getElementById("overlay14");
+      if (overlay14.style.display === "none" || overlay14.style.display === "") {
+        overlay14.style.display = "block";
+      } else {
+        overlay14.style.display = "none";
+      }
+    }
+
+    function closeOverlay14() {
+      var overlay14 = document.getElementById("overlay14");
+      overlay14.style.display = "none";
+    }
+    // for 15
+    function toggleOverlay15() {
+      var overlay15 = document.getElementById("overlay15");
+      if (overlay15.style.display === "none" || overlay15.style.display === "") {
+        overlay15.style.display = "block";
+      } else {
+        overlay15.style.display = "none";
+      }
+    }
+
+    function closeOverlay15() {
+      var overlay15 = document.getElementById("overlay15");
+      overlay15.style.display = "none";
+    }
+    // for 16
+    function toggleOverlay16() {
+      var overlay16 = document.getElementById("overlay16");
+      if (overlay16.style.display === "none" || overlay16.style.display === "") {
+        overlay16.style.display = "block";
+      } else {
+        overlay16.style.display = "none";
+      }
+    }
+
+    function closeOverlay16() {
+      var overlay16 = document.getElementById("overlay16");
+      overlay16.style.display = "none";
+    }
+    // for 17
+    function toggleOverlay17() {
+      var overlay17 = document.getElementById("overlay17");
+      if (overlay17.style.display === "none" || overlay17.style.display === "") {
+        overlay17.style.display = "block";
+      } else {
+        overlay17.style.display = "none";
+      }
+    }
+
+    function closeOverlay17() {
+      var overlay17 = document.getElementById("overlay17");
+      overlay17.style.display = "none";
+    }
+    // for 18
+    function toggleOverlay18() {
+      var overlay18 = document.getElementById("overlay18");
+      if (overlay18.style.display === "none" || overlay18.style.display === "") {
+        overlay18.style.display = "block";
+      } else {
+        overlay18.style.display = "none";
+      }
+    }
+
+    function closeOverlay18() {
+      var overlay18 = document.getElementById("overlay18");
+      overlay18.style.display = "none";
+    }
+    // for 19
+    function toggleOverlay19() {
+      var overlay19 = document.getElementById("overlay19");
+      if (overlay19.style.display === "none" || overlay19.style.display === "") {
+        overlay19.style.display = "block";
+      } else {
+        overlay19.style.display = "none";
+      }
+    }
+
+    function closeOverlay19() {
+      var overlay19 = document.getElementById("overlay19");
+      overlay19.style.display = "none";
+    }
+
+    // for 20
+    function toggleOverlay20() {
+      var overlay20 = document.getElementById("overlay20");
+      if (overlay20.style.display === "none" || overlay20.style.display === "") {
+        overlay20.style.display = "block";
+      } else {
+        overlay20.style.display = "none";
+      }
+    }
+
+    function closeOverlay20() {
+      var overlay20 = document.getElementById("overlay20");
+      overlay20.style.display = "none";
+    }
+    // for 21
+    function toggleOverlay21() {
+      var overlay21 = document.getElementById("overlay21");
+      if (overlay21.style.display === "none" || overlay21.style.display === "") {
+        overlay21.style.display = "block";
+      } else {
+        overlay21.style.display = "none";
+      }
+    }
+
+    function closeOverlay21() {
+      var overlay21 = document.getElementById("overlay21");
+      overlay21.style.display = "none";
+    }
+    // for 22
+    function toggleOverlay22() {
+      var overlay22 = document.getElementById("overlay22");
+      if (overlay22.style.display === "none" || overlay22.style.display === "") {
+        overlay22.style.display = "block";
+      } else {
+        overlay22.style.display = "none";
+      }
+    }
+
+    function closeOverlay22() {
+      var overlay22 = document.getElementById("overlay22");
+      overlay22.style.display = "none";
+    }
+    // for 23
+    function toggleOverlay23() {
+      var overlay23 = document.getElementById("overlay23");
+      if (overlay23.style.display === "none" || overlay23.style.display === "") {
+        overlay23.style.display = "block";
+      } else {
+        overlay23.style.display = "none";
+      }
+    }
+
+    function closeOverlay23() {
+      var overlay23 = document.getElementById("overlay23");
+      overlay23.style.display = "none";
+    }
+    // for 24
+    function toggleOverlay24() {
+      var overlay24 = document.getElementById("overlay24");
+      if (overlay24.style.display === "none" || overlay24.style.display === "") {
+        overlay24.style.display = "block";
+      } else {
+        overlay24.style.display = "none";
+      }
+    }
+
+    function closeOverlay24() {
+      var overlay24 = document.getElementById("overlay24");
+      overlay24.style.display = "none";
+    }
+    // for 25
+    function toggleOverlay25() {
+      var overlay25 = document.getElementById("overlay25");
+      if (overlay25.style.display === "none" || overlay25.style.display === "") {
+        overlay25.style.display = "block";
+      } else {
+        overlay25.style.display = "none";
+      }
+    }
+
+    function closeOverlay25() {
+      var overlay25 = document.getElementById("overlay25");
+      overlay25.style.display = "none";
+    }
+    // for 26
+    function toggleOverlay26() {
+      var overlay26 = document.getElementById("overlay26");
+      if (overlay26.style.display === "none" || overlay26.style.display === "") {
+        overlay26.style.display = "block";
+      } else {
+        overlay26.style.display = "none";
+      }
+    }
+
+    function closeOverlay26() {
+      var overlay26 = document.getElementById("overlay26");
+      overlay26.style.display = "none";
+    }
+    // for 27
+    function toggleOverlay27() {
+      var overlay27 = document.getElementById("overlay27");
+      if (overlay27.style.display === "none" || overlay27.style.display === "") {
+        overlay27.style.display = "block";
+      } else {
+        overlay27.style.display = "none";
+      }
+    }
+
+    function closeOverlay27() {
+      var overlay27 = document.getElementById("overlay27");
+      overlay27.style.display = "none";
+    }
+    // for 28
+    function toggleOverlay28() {
+      var overlay28 = document.getElementById("overlay28");
+      if (overlay28.style.display === "none" || overlay28.style.display === "") {
+        overlay28.style.display = "block";
+      } else {
+        overlay28.style.display = "none";
+      }
+    }
+
+    function closeOverlay28() {
+      var overlay28 = document.getElementById("overlay28");
+      overlay28.style.display = "none";
+    }
+    // for 29
+    function toggleOverlay29() {
+      var overlay29 = document.getElementById("overlay29");
+      if (overlay29.style.display === "none" || overlay29.style.display === "") {
+        overlay29.style.display = "block";
+      } else {
+        overlay29.style.display = "none";
+      }
+    }
+
+    function closeOverlay29() {
+      var overlay29 = document.getElementById("overlay29");
+      overlay29.style.display = "none";
+    }
+    // for 30
+    function toggleOverlay30() {
+      var overlay30 = document.getElementById("overlay30");
+      if (overlay30.style.display === "none" || overlay30.style.display === "") {
+        overlay30.style.display = "block";
+      } else {
+        overlay30.style.display = "none";
+      }
+    }
+
+    function closeOverlay30() {
+      var overlay30 = document.getElementById("overlay30");
+      overlay30.style.display = "none";
+    }
+    // for 31
+    function toggleOverlay31() {
+      var overlay31 = document.getElementById("overlay31");
+      if (overlay31.style.display === "none" || overlay31.style.display === "") {
+        overlay31.style.display = "block";
+      } else {
+        overlay31.style.display = "none";
+      }
+    }
+
+    function closeOverlay31() {
+      var overlay31 = document.getElementById("overlay31");
+      overlay31.style.display = "none";
+    }
+    // for 32
+    function toggleOverlay32() {
+      var overlay32 = document.getElementById("overlay32");
+      if (overlay32.style.display === "none" || overlay32.style.display === "") {
+        overlay32.style.display = "block";
+      } else {
+        overlay32.style.display = "none";
+      }
+    }
+
+    function closeOverlay32() {
+      var overlay32 = document.getElementById("overlay32");
+      overlay32.style.display = "none";
+    }
+    // for 33
+    function toggleOverlay33() {
+      var overlay33 = document.getElementById("overlay33");
+      if (overlay33.style.display === "none" || overlay33.style.display === "") {
+        overlay33.style.display = "block";
+      } else {
+        overlay33.style.display = "none";
+      }
+    }
+
+    function closeOverlay33() {
+      var overlay33 = document.getElementById("overlay33");
+      overlay33.style.display = "none";
+    }
+    // for 34
+    function toggleOverlay34() {
+      var overlay34 = document.getElementById("overlay34");
+      if (overlay34.style.display === "none" || overlay34.style.display === "") {
+        overlay34.style.display = "block";
+      } else {
+        overlay34.style.display = "none";
+      }
+    }
+
+    function closeOverlay34() {
+      var overlay34 = document.getElementById("overlay34");
+      overlay34.style.display = "none";
+    }
+    // for 35
+    function toggleOverlay35() {
+      var overlay35 = document.getElementById("overlay35");
+      if (overlay35.style.display === "none" || overlay35.style.display === "") {
+        overlay35.style.display = "block";
+      } else {
+        overlay35.style.display = "none";
+      }
+    }
+
+    function closeOverlay35() {
+      var overlay35 = document.getElementById("overlay35");
+      overlay35.style.display = "none";
+    }
+    // for 36
+    function toggleOverlay36() {
+      var overlay36 = document.getElementById("overlay36");
+      if (overlay36.style.display === "none" || overlay36.style.display === "") {
+        overlay36.style.display = "block";
+      } else {
+        overlay36.style.display = "none";
+      }
+    }
+
+    function closeOverlay36() {
+      var overlay36 = document.getElementById("overlay36");
+      overlay36.style.display = "none";
+    }
+
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

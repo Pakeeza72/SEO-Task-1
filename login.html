@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>bookPage</title>
+    <title>LoginPage</title>
     <!-- Required meta tags -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -86,7 +86,7 @@
     <div class="navbar-container">
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg navbar-dark bar">
-        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">Feliciano</b></a>
+        <a class="navbar-brand mx-5" href="#" ><b style="color: white;">SweetSpiceFusion</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -95,7 +95,7 @@
             <li class="nav-item ">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item ">
@@ -113,7 +113,7 @@
           <a class="nav-link text-light" href="cart.html">
             <i class="fas fa-shopping-cart fa-lg" style="margin-left: 10px;color: burlywood;"></i>
           </a>
-          <a class="nav-link text-light" href="book.html">
+          <a class="nav-link text-light" href="login.html">
             <i class="fas fa-user fa-lg" style="margin-left: 10px;color: burlywood;"></i>
           </a>
         </form>
@@ -136,29 +136,26 @@
           <div class="col-sm-3"></div>
           <div class="col-sm">
             <div class="card mt-5 mb-5 " id="c1" style="box-shadow: 4px 2px 2px wheat;">
-              <div class="card-header" id="c2" style="border-radius: 5px;">
-                <h5>Login Form</h5>
-              </div>
-              <div class="form-container text-center">
-                <div class="form-inner">
-                  <form action="#" class="login">
-                    <div class="field">
-                      <input type="text" placeholder="Email Address" required>
-                    </div>
-                    <div class="field">
-                      <input type="password" placeholder="Password" required>
-                    </div>
-                    <div class="pass-link">
-                      <a href="forget.php">Forgot password?</a>
-                    </div>
-                    <button class="btn-block p-2 border-0 mt-2" style="background-color: burlywood;border-radius: 50px;" ><a href="index.php" style="text-decoration: none;color: black;">LogIn</a></button>
-                    <div class="signup-link">
-                      Not a member? <a href="signup.php">Signup now</a>
-                    </div>
-                  </form>
+                <div class="card-header" id="c2" style="border-radius: 5px;">
+                    <h5>Login Form</h5>
                 </div>
-              </div>
+                <div class="form-container text-center">
+                    <div class="form-inner">
+                        <form id="loginForm">  
+                            <div class="field">
+                                <input id="email" type="text" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="field">
+                                <input id="password" type="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-block mt-2" style="border-radius: 50px;background-color: burlywood;">Log In</button>
+                            <a href="forget.html" style="color: red;text-decoration: none;">Forget Password</a>
+                            <p>Don't have an account? <a href="signup.html" style="color: blue;text-decoration: none;">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
             </div>
+            
           </div>
           <div class="col-sm-3"></div>      
         </div>
@@ -246,38 +243,42 @@
 
 
 
-    <script>
-      function initMap() {
-        // Define the center and initial zoom level
-        const mapCenter = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
-        const mapOptions = {
-          zoom: 12,
-          center: mapCenter,
-        };
-    
-        // Create the map
-        const map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    
-        // Add markers, overlays, and other map features here
-      }
-//For Form
-$(document).ready(function() {
-      $('#loginForm').submit(function(e) {
-        e.preventDefault();
-        // Replace the following with your actual login logic
-        var successfulLogin = true; // Set to true if login is successful
 
-        if (successfulLogin) {
-          // Show success modal
-          $('#successModal .modal-body').text('You are logged in successfully.');
-          $('#successModal').modal('show');
-        }
-      });
-    });
- 
+
+
+      <script>
+        // JavaScript code for form validation and submission
+        $(document).ready(function() {
+            $('#loginForm').submit(function(event) {
+                event.preventDefault(); // Prevent default form submission
+    
+                // Get values of email and password fields
+                var email = $('#email').val().trim();
+                var password = $('#password').val().trim();
+    
+                // Check if email and password are not empty
+                if (email === '' || password === '') {
+                    alert('Please fill in all fields.');
+                } else {
+                    // Check if email is in valid format
+                    if (!isValidEmail(email)) {
+                        alert('Please enter a valid email address.');
+                    } else {
+                        // If all validations pass, show success message and redirect
+                        alert('You have been logged in successfully.');
+                        window.location.href = 'index.html';
+                    }
+                }
+            });
+    
+            // Function to validate email format
+            function isValidEmail(email) {
+                var emailRegex = /\S+@\S+\.\S+/;
+                return emailRegex.test(email);
+            }
+        });
     </script>
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

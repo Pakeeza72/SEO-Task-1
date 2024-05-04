@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+        <div class="left">
+            <div class="main_image">
+                <!-- This image will be replaced dynamically -->
+                <img id="productImage" width="100%" height="50%" src="" alt="abc" class="slide"> 
+            </div>
+        </div>
+        <div class="right">
+            <h3 id="productName">Product Name</h3>
+            <h4 id="productPrice">Price</h4>
+            <p id="productDescription">Product Description</p>
+            <h4 style="color: rgb(245, 141, 5);">Quantity</h4>
+            <div class="add flex1">
+                <span class="minus">-</span>
+                <label id="quantity">1</label>
+                <span class="plus">+</span>
+            </div>
+            <button id="confirmOrderButton" class="btn btn-block" style="background-color: burlywood;color: black;">Confirm Order</button>
+        </div>
+    </div>
+</section>
+  
+
+
+
+
+  <script>
+
+
+
+
+
+
+
+  // Add event listener to the confirm order button
+  document.getElementById('confirmOrderButton').addEventListener('click', function() {
+    // Display an alert message
+    alert('Your order has been confirmed');
+    // Redirect to menu.html after the alert is closed
+    window.location.href = 'menu.html';
+  });
+
+document.addEventListener('DOMContentLoaded', function () {
+            // Get the product information from the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const productName = urlParams.get('name');
+            const productPrice = urlParams.get('price');
+            const productDescription = urlParams.get('description');
+            const productImage = urlParams.get('image');
+
+            // Update the content on the page with the retrieved information
+            document.getElementById('productName').innerText = productName;
+            document.getElementById('productPrice').innerText = `Rs-${productPrice}`;
+            document.getElementById('productDescription').innerText = productDescription;
+            document.getElementById('productImage').src = productImage;
+        });
+
+
+
+
+
+
+    // Get the plus and minus buttons and the quantity label
+    const minusButton = document.querySelector('.minus');
+    const plusButton = document.querySelector('.plus');
+    const quantityLabel = document.getElementById('quantity');
+  
+    // Add event listener for the plus button
+    plusButton.addEventListener('click', function() {
+      // Increment the quantity by 1
+      let quantity = parseInt(quantityLabel.textContent);
+      quantity++;
+      quantityLabel.textContent = quantity;
+    });
+  
+    // Add event listener for the minus button
+    minusButton.addEventListener('click', function() {
+      // Decrement the quantity by 1, but ensure it doesn't go below 0
+      let quantity = parseInt(quantityLabel.textContent);
+      if (quantity > 0) {
+        quantity--;
+        quantityLabel.textContent = quantity;
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
